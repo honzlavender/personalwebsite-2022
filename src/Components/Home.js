@@ -5,13 +5,12 @@ import { useContext } from "react";
 //import { Themes } from "/Theme";
 import { Themes } from "./Theme";
 import Switch from "./Switch";
-//layout
-import { Layout } from "antd";
+//cards
+import Portfolio from "../Cards/Portfolio";
 
 function Home() {
   const [{ theme }, toggleTheme] = useContext(Themes);
 
-  const { Header, Content, Footer } = Layout;
 
   return (
     <>
@@ -28,6 +27,9 @@ function Home() {
           <br />
         <h1 className="name">Honz Lavender</h1>
         <Switch toggleTheme={toggleTheme} />
+
+        <Portfolio />
+        
       </div>
     </>
   );
