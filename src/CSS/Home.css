@@ -1,0 +1,25 @@
+h2 {
+    text-align: center;
+    padding-top: 70px;
+    font-size: 2vw;
+}
+
+h4 {
+    text-align: center;
+}
+
+.name {
+    text-align: center;
+    font-size: 8vw;
+    font-family: 'Josefin Slab', serif;
+    text-transform: lowercase;
+    font-weight: lighter;
+    padding-top: 0px;
+    padding-bottom: 0;
+}
+
+.aboutcontact {
+    text-decoration: none;
+    font-style: italic;
+    color: #fff;
+}
