@@ -2,9 +2,9 @@ import React from "react";
 
 function AboutContact() {
   return (
-    <>
-    <h2>about && contact</h2>
-    </>
+    <div>
+    <h6>about && contact</h6>
+    </div>
   );
 }
 

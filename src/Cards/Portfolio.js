@@ -1,24 +1,31 @@
-import { Card, Button } from "react-bootstrap";
+//import { Card, Button } from "react-bootstrap";
 import "../CSS/Cards.css";
-import img1 from "../Graphics/img1.JPG"
+import Cards from "./Cards";
+import img1 from "../Graphics/img1.JPG";
+
 
 function Portfolio() {
   return (
-    <>
-      <Card 
-        style={{ width: "18rem", borderWidth: 5, color: "blue"}}>
-        <Card.Img variant="top" src={img1} />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
-        </Card.Body>
-      </Card>
-    </>
+    <div className="row">
+    <Cards image={img1} image2={img1} title1='Portfolio' title2='pomodoro'/>
+    <Cards image={img1} image2={img1} title1='Portfolio' title2='pomodoro'/>
+    </div>
   );
 }
 
 export default Portfolio;
+
+/*
+      <Card className="engineerCard">
+        <Card.Img variant="top" src={img1} />
+        <Card.Body>
+          <Card.Title style={{fontSize: '3vw'}}>Project 1</Card.Title>
+          <Card.Text style={{fontSize: '2vw'}}>
+            my portfolio!
+          </Card.Text>
+          <div className="text-center">
+          <Button className="butt" variant="primary" style={{fontSize: '2vw'}}>Go somewhere</Button>
+          </div>
+        </Card.Body>
+      </Card>
+      */

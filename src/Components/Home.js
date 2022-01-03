@@ -6,14 +6,12 @@ import { useContext } from "react";
 import { Themes } from "./Theme";
 import Switch from "./Switch";
 //cards
-import Portfolio from "../Cards/Portfolio";
 
 function Home() {
   const [{ theme }, toggleTheme] = useContext(Themes);
 
-
   return (
-    <>
+    <div className="home">
       <div
         className="App"
         style={{
@@ -21,17 +19,14 @@ function Home() {
           color: theme.color,
         }}
       >
-          <Link to="/aboutcontact" className="aboutcontact">
-            {<AboutContact />}
-          </Link>
-          <br />
+        <Link to="/aboutcontact" className="aboutcontact">
+          {<AboutContact />}
+        </Link>
+        <br />
         <h1 className="name">Honz Lavender</h1>
-        <Switch toggleTheme={toggleTheme} />
-
-        <Portfolio />
-        
+        <Switch toggleTheme={toggleTheme}/>
       </div>
-    </>
+    </div>
   );
 }
 

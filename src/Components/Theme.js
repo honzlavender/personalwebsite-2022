@@ -1,18 +1,11 @@
 
-
+import React from 'react';
 import { createContext, useState, useEffect } from 'react';
 
-/*
-const engineer = {
-    backgroundColor: "#17333e",
-    color: "#bfd7e3",
-}
+//import Portfolio from '../Cards/Portfolio';
+//import AboutContact from './AboutContact';
 
-const artist = {
-    backgroundColor: "#bfd7e3",
-    color: "#17333e",
-}
-*/
+
 export let themes = {
     engineer: {
         backgroundColor: "#17333e",
@@ -27,14 +20,16 @@ export let themes = {
 export const Themes = createContext();
 
 export const ThemeProvider = ({children}) => {
-    const [isDark, setIsDark] =useState(false);
+    const [isDark, setIsDark] =useState(true);
     const toggleTheme = () => {
         localStorage.setItem("isDark", JSON.stringify(!isDark));
         setIsDark(!isDark);
     };
 
+
+
+
     const theme = isDark ? themes.engineer : themes.artist;
-    //const theme = isDark ? <Engineer /> : <Artist />;
 
     useEffect(() => {
         const isDark = localStorage.getItem("isDark") === "true";
@@ -42,6 +37,7 @@ export const ThemeProvider = ({children}) => {
     }, []);
 
     return (
+        
         <Themes.Provider value={[{ theme, isDark }, toggleTheme]}>
             {children}
         </Themes.Provider>

@@ -1,0 +1,26 @@
+.card-img {
+  height: 20vw;
+  object-fit: cover;
+}
+
+.card {
+  width: 35vw;
+  margin-bottom: 2vw;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4vw;
+}
+
+button.btn {
+  font-size: 2vw;
+  background: #e7aff7;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-transform: lowercase;
+}
