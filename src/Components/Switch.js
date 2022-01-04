@@ -1,8 +1,8 @@
 import React from "react";
 import "../CSS/Switch.css";
 import { RiMoonClearLine, RiSunLine } from "react-icons/ri";
-import Portfolio from "../Cards/Portfolio";
 import Art from "../Cards/Art";
+import Engineer from "../Cards/Portfolio";
 //import Portfolio from "../Cards/Portfolio";
 
 const Switch = ({ toggleTheme }) => {
@@ -46,7 +46,7 @@ const Switch = ({ toggleTheme }) => {
       <h6 className="label-light-artist">Artist</h6>
     </div>
     <div className="cards">
-      {isOn ? <Art /> : <Portfolio />}
+      {isOn ? <Art /> : <Engineer />}
       </div>
     </>
   );

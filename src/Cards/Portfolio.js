@@ -3,7 +3,7 @@ import "../CSS/Cards.css";
 import Cards from "./Cards";
 import img1 from "../Graphics/img1.JPG";
 
-function Portfolio() {
+function Engineer() {
   return (
     <div className="fuck">
       <div className="row">
@@ -24,7 +24,7 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Engineer;
 
 /*
       <Card className="engineerCard">
