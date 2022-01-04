@@ -12,15 +12,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4vw;
+  margin:  4vw;
 }
 
 button.btn {
   font-size: 2vw;
   background: #e7aff7;
+  font-family: 'Josefin Slab', serif;
   color: #fff;
   border: none;
-  border-radius: 3px;
-  padding: 5px 10px;
+  border-radius: 25px;
+  padding: 5px 12px;
   text-transform: lowercase;
+  transition-duration: 0.4s;
+  opacity: .9;
+}
+
+.fuck {
+  margin-bottom: 40vw;
+}
+
+.card-img-overlay {
+  display: flex;
+  float: left;
 }

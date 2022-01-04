@@ -1,7 +1,6 @@
 //import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../CSS/Cards.css";
-import { RiEmotionHappyLine } from "react-icons/ri";
 
 
 function Cards({image, image2, title1, title2}) {
@@ -20,7 +19,7 @@ return (
             <div class="card-img-overlay">
               <Link to="/">
                 <div className="text-center">
-                  <button type="button" class="btn btn-primary btn-rounded">
+                  <button type="button" class="btn btn-rounded">
                     {title1}
                   </button>
                 </div>
@@ -39,7 +38,7 @@ return (
             <div class="card-img-overlay">
               <Link to="/aboutcontact">
                 <div className="text-center">
-                  <button type="button" class="btn btn-primary btn-rounded">
+                  <button type="button" class="btn btn-rounded">
                     {title2}
                   </button>
                 </div>

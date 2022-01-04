@@ -3,12 +3,23 @@ import "../CSS/Cards.css";
 import Cards from "./Cards";
 import img1 from "../Graphics/img1.JPG";
 
-
 function Portfolio() {
   return (
-    <div className="row">
-    <Cards image={img1} image2={img1} title1='Portfolio' title2='pomodoro'/>
-    <Cards image={img1} image2={img1} title1='Portfolio' title2='pomodoro'/>
+    <div className="fuck">
+      <div className="row">
+        <Cards
+          image={img1}
+          image2={img1}
+          title1="Portfolio"
+          title2="pomodoro"
+        />
+        <Cards
+          image={img1}
+          image2={img1}
+          title1="flashcards"
+          title2="grubdash"
+        />
+      </div>
     </div>
   );
 }

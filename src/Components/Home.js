@@ -1,10 +1,10 @@
 import "../CSS/Home.css";
 import { Link } from "react-router-dom";
-import AboutContact from "./AboutContact";
 import { useContext } from "react";
 //import { Themes } from "/Theme";
 import { Themes } from "./Theme";
 import Switch from "./Switch";
+import Footer from "./Footer";
 //cards
 
 function Home() {
@@ -20,11 +20,12 @@ function Home() {
         }}
       >
         <Link to="/aboutcontact" className="aboutcontact">
-          {<AboutContact />}
+        <h6>about && contact</h6>
         </Link>
         <br />
         <h1 className="name">Honz Lavender</h1>
         <Switch toggleTheme={toggleTheme}/>
+        <Footer />
       </div>
     </div>
   );
