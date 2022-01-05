@@ -6,6 +6,7 @@
 
 a.backHome {
   text-decoration: none;
+  margin: 0 4vw;
 }
 
 h1 {
@@ -39,24 +40,96 @@ p {
 }
 
 /*resume*/
-.pdf{
-  height: auto;
-  width: 30vw;
+.container-resume {
+  text-align: center;
+  margin-top: 25px;
+}
+
+img {
+  width: 35vw;
+  margin: 0px;
+}
+
+a.resume {
+  text-align: center;
+  color: #bfd7e3;
+  font-family: "Josefin Slab", serif;
+  text-transform: lowercase;
+}
+a.resume:hover {
+color: #fff;
+}
+
+input.CV {
+  font-family: "Josefin Slab", serif;
+  margin: 0 45%;
+  background: #bfd7e3;
+  color: #17333e;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  padding: 5px 15px;
+  margin: 10px 10px;
+}
+
+button.btn {
+  background: #17333e;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  padding: 5px 15px;
+  margin: 10px 10px;
 }
 
 @media only screen and (max-width: 500px) {
   .babypic {
-    margin: 0 0 5vw 15vw;
-    height: 100vw;
-    width: 70vw;
+    height: 102vw;
+    width: 75vw;
+    margin-bottom: 3vw;
+  }
+
+  div.col.babypic{
+    text-align: center;
   }
 
   p {
-    margin: 0 15vw 0 15vw;
+    margin: 0 18vw;
     color: #fff;
   }
 
   .copy {
     margin-bottom: 20vw;
+  }
+  img.pic {
+    display: none;
+  }
+
+  button.btn {
+    background: #17333e;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+    padding: 5px 15px;
+    margin: 10px 10px;
+  }
+
+  .container-resume {
+    text-align: center;
+    margin: 0 0 2vw 0;
+  }
+
+  input.CV {
+    font-family: "Josefin Slab", serif;
+    margin: 0 45%;
+    background: #bfd7e3;
+    color: #17333e;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+  }
+
+  a.backHome {
+    text-decoration: none;
+    margin: 0 47vw;
   }
 }

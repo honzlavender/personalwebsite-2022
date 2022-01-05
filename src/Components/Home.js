@@ -20,11 +20,12 @@ function Home() {
         }}
       >
         <Link to="/aboutcontact" className="aboutcontact">
-        <h6>about && contact</h6>
+        <h5>about && contact</h5>
         </Link>
         <br />
-        <h1 className="name">Honz Lavender</h1>
+        <h1 className="name">Honz Williams</h1>
         <Switch toggleTheme={toggleTheme}/>
+        
         <Footer />
       </div>
     </div>

@@ -1,25 +1,38 @@
-import React from "react";
+/* eslint-disable jsx-a11y/alt-text */
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+
 //image
 import babypic from "../Graphics/Home/babypic.jpg";
-import resume from "../Graphics/Home/resume.pdf";
+import resume from "../Graphics/Home/resume.jpg";
+import resumePDF from "../Graphics/Home/resumePDF.pdf";
 //css
 import "../CSS/About.css";
+import Resume from "../Cards/Resume";
+//icon
+import { RiHomeHeartLine } from 'react-icons/ri'
 
 function AboutContact() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <body className="about">
         <Link to="/" className="backHome">
-          <h1>home</h1>
+          <h1><RiHomeHeartLine/></h1>
         </Link>
-<embed src={resume} type="pdf" className="pdf"/>
 
         <div className="row">
           <div className="col">
             <img src={babypic} alt="babypic" className="babypic" />
           </div>
+
+          
 
           <div className="col">
             <div className="copy">
@@ -37,6 +50,48 @@ function AboutContact() {
                 I'm technically a full-stack engineer but my passion lies in
                 front-end developement & design.
               </p>
+
+              <div>
+                <input
+                  className="CV"
+                  type="button"
+                  value="resume"
+                  onClick={togglePopup}
+                />
+                {isOpen && (
+                  <Resume
+                    content={
+                      <div className="pop">
+                        <img src={resume} class="pic" />
+                        <br />
+                        <div className="container-resume">
+                          <button type="button" class="btn">
+                            <a
+                              className="resume"
+                              href={resumePDF}
+                              download="HonzWilliamsResume.pdf"
+                            >
+                              Download Resume
+                            </a>
+                          </button>
+                          <button type="button" class="btn">
+                            <a
+                              href={resumePDF}
+                              target="_blank"
+                              className="resume"
+                              rel="noreferrer"
+                            >
+                              {" "}
+                              open in new tab
+                            </a>
+                          </button>
+                        </div>
+                      </div>
+                    }
+                    handleClose={togglePopup}
+                  />
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -53,3 +108,10 @@ function AboutContact() {
 export default AboutContact;
 
 //  <Link to="/">{<Home />}</Link>
+/*
+                    <a className="resume"
+                      href={resumePDF}
+                      download="ResumeOfficial.pdf"
+                    >
+                      Download Resume
+                    </a>*/

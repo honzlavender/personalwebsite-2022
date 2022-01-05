@@ -5,17 +5,17 @@
 
 .card {
   width: 35vw;
-  margin-bottom: 2vw;
+  margin: 1vw 1vw;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:  4vw;
+  margin: 0vw 4vw;
 }
 
-button.btn {
+button.btnButton {
   font-size: 2vw;
   background: #e7aff7;
   font-family: 'Josefin Slab', serif;
@@ -28,7 +28,8 @@ button.btn {
   opacity: .9;
 }
 
-.fuck {
+.grid {
+  margin-top: 5vw;
   margin-bottom: 40vw;
 }
 

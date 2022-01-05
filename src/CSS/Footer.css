@@ -1,6 +1,5 @@
-.container {
-    display: flex;
-    flex-direction: column;
+.container-footer {
+  text-align: center;
   }
 
 .imgMain {
@@ -14,7 +13,7 @@
 .row-social {
   font-size: 30px;
   text-align: center;
-  margin-top: 6vw;
+  margin-top: 15vw;
   margin-bottom: 2vw;
 }
 

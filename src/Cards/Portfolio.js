@@ -5,8 +5,9 @@ import img1 from "../Graphics/img1.JPG";
 
 function Engineer() {
   return (
-    <div className="fuck">
+    <div className="grid">
       <div className="row">
+      <h6>some info about me as an engineer</h6>
         <Cards
           image={img1}
           image2={img1}

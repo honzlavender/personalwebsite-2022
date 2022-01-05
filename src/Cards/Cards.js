@@ -19,7 +19,7 @@ return (
             <div class="card-img-overlay">
               <Link to="/">
                 <div className="text-center">
-                  <button type="button" class="btn btn-rounded">
+                  <button className="cardButton" type="button" class="btnButton btn-rounded">
                     {title1}
                   </button>
                 </div>
@@ -38,7 +38,7 @@ return (
             <div class="card-img-overlay">
               <Link to="/aboutcontact">
                 <div className="text-center">
-                  <button type="button" class="btn btn-rounded">
+                  <button className="cardButton" type="button" class="btnButton btn-rounded">
                     {title2}
                   </button>
                 </div>

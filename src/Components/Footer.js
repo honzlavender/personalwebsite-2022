@@ -9,7 +9,7 @@ import { RiTwitterLine, RiInstagramLine, RiGithubFill } from "react-icons/ri";
 function Footer() {
   return (
     <footer>
-      <div className="container">
+      <div className="container-footer">
         <div className="col">
           <div className="row-social">
             <a

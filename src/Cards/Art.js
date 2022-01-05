@@ -4,8 +4,9 @@ import img2 from "../Graphics/img2.jpg";
 
 function Art() {
   return (
-    <div className="fuck">
+    <div className="grid">
       <div className="row">
+      <h6>some info about me as an engineer</h6>
         <Cards
           image={img2}
           image2={img2}
