@@ -20,7 +20,7 @@ function Home() {
         }}
       >
         <Link to="/aboutcontact" className="aboutcontact">
-        <h5>about && contact</h5>
+        <h5 style={{fontSize: "20px"}}>about && contact</h5>
         </Link>
         <br />
         <h1 className="name">Honz Williams</h1>

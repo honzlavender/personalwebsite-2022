@@ -1,23 +1,15 @@
+/*ABOUT ME FULL PAGE*/
 .about {
   display: flex;
   flex-direction: column;
   background-color: #17333e;
 }
 
+/*RETURN HOME BUTTON*/
 a.backHome {
-  text-decoration: none;
-  margin: 0 4vw;
-}
-
-h1 {
-  text-decoration: none;
-  font-style: italic;
   color: #fff;
-  text-align: left;
-  font-family: "Josefin Slab", serif;
-  text-transform: lowercase;
-  font-weight: lighter;
-  padding: 4vw 2vw;
+  text-align: center;
+  padding: 5vw 0;
 }
 
 .row {
@@ -26,110 +18,56 @@ h1 {
   margin: 2vw;
 }
 
+/*ABOUT ME PARAGRAPH*/
 p {
   margin-right: 12vw;
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Josefin Slab", serif;
 }
 
+/*about me photo*/
 .babypic {
   margin-left: 12vw;
   width: auto;
   height: 50vw;
 }
 
-/*resume*/
-.container-resume {
-  text-align: center;
-  margin-top: 25px;
-}
-
-img {
-  width: 35vw;
-  margin: 0px;
-}
-
-a.resume {
-  text-align: center;
-  color: #bfd7e3;
-  font-family: "Josefin Slab", serif;
-  text-transform: lowercase;
-}
-a.resume:hover {
-color: #fff;
-}
-
+/*resume button on about me*/
 input.CV {
   font-family: "Josefin Slab", serif;
-  margin: 0 45%;
+  text-align: center;
   background: #bfd7e3;
   color: #17333e;
   border-radius: 25px;
   border: none;
   font-size: 14px;
   padding: 5px 15px;
-  margin: 10px 10px;
+  margin-top: 5vw;
 }
 
-button.btn {
-  background: #17333e;
-  border-radius: 25px;
-  border: none;
-  font-size: 14px;
-  padding: 5px 15px;
-  margin: 10px 10px;
-}
-
+/*MOBILE LAYOUT*/
 @media only screen and (max-width: 500px) {
   .babypic {
     height: 102vw;
     width: 75vw;
-    margin-bottom: 3vw;
+    margin-bottom: 6vw;
   }
 
   div.col.babypic{
     text-align: center;
   }
 
+  /*only about me text*/
   p {
+    text-align: left;
     margin: 0 18vw;
     color: #fff;
   }
 
+  /*about me copy div (text & button container)*/
   .copy {
-    margin-bottom: 20vw;
-  }
-  img.pic {
-    display: none;
-  }
-
-  button.btn {
-    background: #17333e;
-    border-radius: 25px;
-    border: none;
-    font-size: 14px;
-    padding: 5px 15px;
-    margin: 10px 10px;
-  }
-
-  .container-resume {
     text-align: center;
-    margin: 0 0 2vw 0;
   }
 
-  input.CV {
-    font-family: "Josefin Slab", serif;
-    margin: 0 45%;
-    background: #bfd7e3;
-    color: #17333e;
-    border-radius: 25px;
-    border: none;
-    font-size: 14px;
-  }
-
-  a.backHome {
-    text-decoration: none;
-    margin: 0 47vw;
-  }
 }

@@ -11,7 +11,7 @@ import resumePDF from "../Graphics/Home/resumePDF.pdf";
 import "../CSS/About.css";
 import Resume from "../Cards/Resume";
 //icon
-import { RiHomeHeartLine } from 'react-icons/ri'
+import { RiHomeHeartLine } from "react-icons/ri";
 
 function AboutContact() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,9 @@ function AboutContact() {
     <>
       <body className="about">
         <Link to="/" className="backHome">
-          <h1><RiHomeHeartLine/></h1>
+          <h1>
+            <RiHomeHeartLine />
+          </h1>
         </Link>
 
         <div className="row">
@@ -32,26 +34,14 @@ function AboutContact() {
             <img src={babypic} alt="babypic" className="babypic" />
           </div>
 
-          
-
           <div className="col">
             <div className="copy">
               <p>
                 My name is Honz, my pronouns are she/they, and I’m an artist &
                 software engineer based in Brooklyn, USA.
               </p>
-              <br />
-              <p>
-                I like to think of myself as a multiimedium artist though I
-                spend a lot of my time illustrating.{" "}
-              </p>
-              <br />
-              <p>
-                I'm technically a full-stack engineer but my passion lies in
-                front-end developement & design.
-              </p>
 
-              <div>
+               <div className="poop">
                 <input
                   className="CV"
                   type="button"

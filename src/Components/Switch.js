@@ -2,7 +2,7 @@ import React from "react";
 import "../CSS/Switch.css";
 import { RiMoonClearLine, RiSunLine } from "react-icons/ri";
 import Art from "../Cards/Art";
-import Engineer from "../Cards/Portfolio";
+import Engineer from "../Cards/Engineer";
 //import Portfolio from "../Cards/Portfolio";
 
 const Switch = ({ toggleTheme }) => {

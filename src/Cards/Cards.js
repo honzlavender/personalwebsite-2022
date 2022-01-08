@@ -1,11 +1,11 @@
 //import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Popup from "../Components/Popup";
 import "../CSS/Cards.css";
 
-
-function Cards({image, image2, title1, title2}) {
-return (
-
+//make prop linkTo to fill link to project
+function Cards({ image, image2, projectName, title2, name }) {
+  return (
     <div className="container">
       <div className="row">
         <div className="col">
@@ -17,13 +17,15 @@ return (
               alt="portfolio"
             />
             <div class="card-img-overlay">
-              <Link to="/">
                 <div className="text-center">
-                  <button className="cardButton" type="button" class="btnButton btn-rounded">
-                    {title1}
+                  <button
+                    className="cardButton"
+                    type="button"
+                    class="btnButton btn-rounded"
+                  >
+                    <Popup projectName={projectName}/>
                   </button>
                 </div>
-              </Link>
             </div>
           </div>
         </div>
@@ -38,7 +40,11 @@ return (
             <div class="card-img-overlay">
               <Link to="/aboutcontact">
                 <div className="text-center">
-                  <button className="cardButton" type="button" class="btnButton btn-rounded">
+                  <button
+                    className="cardButton"
+                    type="button"
+                    class="btnButton btn-rounded"
+                  >
                     {title2}
                   </button>
                 </div>
@@ -48,7 +54,7 @@ return (
         </div>
       </div>
     </div>
-)
+  );
 }
 
 export default Cards;

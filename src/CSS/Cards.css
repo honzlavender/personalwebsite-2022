@@ -1,39 +1,126 @@
+/*controls image size for cards for engineer and artist*/
 .card-img {
   height: 20vw;
   object-fit: cover;
 }
 
+/*size of card and space between them for engineer and artist*/
 .card {
   width: 35vw;
-  margin: 1vw 1vw;
+  margin: 4% 0;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0vw 4vw;
 }
 
+/*project name buttons*/
 button.btnButton {
   font-size: 2vw;
   background: #e7aff7;
-  font-family: 'Josefin Slab', serif;
+  font-family: "Josefin Slab", serif;
   color: #fff;
   border: none;
   border-radius: 25px;
   padding: 5px 12px;
   text-transform: lowercase;
   transition-duration: 0.4s;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .grid {
   margin-top: 5vw;
-  margin-bottom: 40vw;
+  margin-bottom: 30vw;
 }
 
+/*button placement*/
 .card-img-overlay {
   display: flex;
   float: left;
+}
+
+/*engineer blurb*/
+h6.blurb {
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+/*artist blurb*/
+h6.blurb-art {
+  font-family: "Raleway", sans-serif;
+  text-align: right;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+/*code girl emoji*/
+img.engineer {
+  width: 8vw;
+}
+
+/*art girl emoji*/
+img.artist {
+  width: 8vw;
+}
+
+/*emoji and text box for both*/
+div.blurb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 750px;
+  padding: 10px;
+  border: 0px solid gray;
+  margin: 0 auto 3vw auto;
+}
+
+/*MOBILE LAYOUT*/
+@media only screen and (max-width: 500px) {
+  h6.blurb,
+  h6.blurb-art {
+    font-size: 10px;
+  }
+
+  div.blurb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    padding: 0 20px;
+    border: 0px solid gray;
+    margin: 0 auto 5vw auto;
+  }
+
+  /*code girl emoji*/
+img.engineer {
+  width: 16vw;
+}
+
+/*art girl emoji*/
+img.artist {
+  width: 16vw;
+  
+}
+}
+
+/*IPAD LAYOUT*/
+@media (min-width:501px) and (max-width:900px) {
+  h6.blurb,
+  h6.blurb-art {
+    font-size: 14px;
+  }
+
+  div.blurb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+    padding: 10px;
+    border: 0px solid gray;
+    margin: 0 auto 5vw auto;
+  }
 }

@@ -4,17 +4,13 @@
 
 h5 {
     text-align: center;
-    padding-top: 7vw;
+    padding-top: 10vw;
 }
 
-h6 {
-    font-family: 'Josefin Slab', serif;
-    text-align: center;
-}
-
+/*my name*/
 .name {
     text-align: center;
-    font-size: 8vw;
+    font-size: 10vw;
     font-family: 'Josefin Slab', serif;
     text-transform: lowercase;
     font-weight: lighter;
@@ -39,4 +35,10 @@ h6 {
 
 .home {  
     width: 100vw;
+}
+
+@media only screen and (max-width: 500px) {
+.name {
+    font-size: 15vw;
+}
 }
