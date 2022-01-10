@@ -8,8 +8,13 @@
 /*RETURN HOME BUTTON*/
 a.backHome {
   color: #fff;
-  text-align: center;
-  padding: 5vw 0;
+  text-align: left;
+  margin: 2% 12vw;
+}
+
+/*home icon hover*/
+a.backHome:hover {
+  color: #e7aff7;
 }
 
 .row {
@@ -54,7 +59,7 @@ input.CV {
     margin-bottom: 6vw;
   }
 
-  div.col.babypic{
+  div.col.babypic {
     text-align: center;
   }
 
@@ -70,4 +75,9 @@ input.CV {
     text-align: center;
   }
 
+  a.backHome {
+    color: #fff;
+    text-align: center;
+    margin: 3% 0;
+  }
 }

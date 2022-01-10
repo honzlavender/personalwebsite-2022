@@ -7,13 +7,13 @@
 /*size of card and space between them for engineer and artist*/
 .card {
   width: 35vw;
-  margin: 4% 0;
+  margin: 1vw;
+  align-self: center;
 }
 
-.container {
-  display: flex;
+div.cards {
   justify-content: center;
-  align-items: center;
+  margin-top: 5%;
 }
 
 /*project name buttons*/
@@ -27,12 +27,7 @@ button.btnButton {
   padding: 5px 12px;
   text-transform: lowercase;
   transition-duration: 0.4s;
-  opacity: 0.9;
-}
-
-.grid {
-  margin-top: 5vw;
-  margin-bottom: 30vw;
+  margin: 1px;
 }
 
 /*button placement*/
@@ -45,82 +40,118 @@ button.btnButton {
 h6.blurb {
   font-family: "Raleway", sans-serif;
   text-align: left;
-  margin-left: 10px;
-  font-size: 22px;
+  font-size: 2vw;
 }
 
 /*artist blurb*/
 h6.blurb-art {
   font-family: "Raleway", sans-serif;
   text-align: right;
-  margin-right: 10px;
-  font-size: 22px;
+  font-size: 2vw;
 }
 
-/*code girl emoji*/
-img.engineer {
-  width: 8vw;
-}
-
-/*art girl emoji*/
-img.artist {
-  width: 8vw;
+/*col that holds blurbs and cards*/
+div.col-cards {
+  display: flex;
+  flex-direction: column;
+  margin: 3vw;
 }
 
 /*emoji and text box for both*/
-div.blurb {
+div.row-blurb {
+  display: flex;
+  align-items: center;
+  margin: 0 10vw 2vw;
+}
+
+/*card rows*/
+div.row-cards {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  width: 750px;
-  padding: 10px;
-  border: 0px solid gray;
-  margin: 0 auto 3vw auto;
+  justify-content: center;
+}
+
+/*emoji*/
+img.engineer,
+img.artist {
+  width: 8vw;
+  height: 8vw;
+  margin: 0 15px;
 }
 
 /*MOBILE LAYOUT*/
 @media only screen and (max-width: 500px) {
+  .card {
+    width: 35vw;
+    margin: 6px 5px;
+    align-self: center;
+  }
+
   h6.blurb,
   h6.blurb-art {
     font-size: 10px;
+    margin: 0;
   }
 
-  div.blurb {
+  div.col-cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    width: 300px;
-    padding: 0 20px;
-    border: 0px solid gray;
-    margin: 0 auto 5vw auto;
   }
 
-  /*code girl emoji*/
-img.engineer {
-  width: 16vw;
-}
+  div.row-blurb {
+    display: flex;
+    align-items: center;
+    margin: 0 50px 10px;
+  }
 
-/*art girl emoji*/
-img.artist {
-  width: 16vw;
-  
-}
+  div.row-cards {
+    display: flex;
+  }
+
+  /*emoji*/
+  img.engineer,
+  img.artist {
+    width: 11vw;
+    height: 11vw;
+    margin: 0 5px;
+  }
 }
 
 /*IPAD LAYOUT*/
-@media (min-width:501px) and (max-width:900px) {
-  h6.blurb,
-  h6.blurb-art {
-    font-size: 14px;
+@media (min-width: 501px) and (max-width: 900px) {
+  .card {
+    width: 35vw;
+    margin: 14px;
+    align-self: center;
   }
 
-  div.blurb {
+  h6.blurb,
+  h6.blurb-art {
+    font-size: 2vw;
+  }
+
+  div.col-cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    width: 500px;
-    padding: 10px;
-    border: 0px solid gray;
-    margin: 0 auto 5vw auto;
+  }
+
+  div.row-blurb {
+    display: flex;
+    align-items: center;
+    margin: 0 8vw 2vw;
+  }
+
+  div.row-cards {
+    display: flex;
+  }
+
+  /*emoji*/
+  img.engineer,
+  img.artist {
+    width: 70px;
+    height: 70px;
+    margin: 0 15px;
   }
 }

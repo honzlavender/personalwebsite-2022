@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
-  padding-top: 0px;
+  padding-top: 40px;
 }
 
 .react-switch-checkbox {
@@ -95,7 +95,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 2vw;
-    font-size: 4vw;
+    font-size: 3vw;
     text-transform: uppercase;
     /*font-family: 'Josefin Slab', serif;*/
     font-family: "Raleway";

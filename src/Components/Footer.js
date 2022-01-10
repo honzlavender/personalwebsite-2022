@@ -11,7 +11,7 @@ function Footer() {
     <footer>
       <div className="container-footer">
         <div className="col">
-          <div className="row-social">
+          <div className="social">
             <a
               href="https://www.instagram.com/honz.art/"
               target="_blank"
