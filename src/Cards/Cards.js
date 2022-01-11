@@ -16,7 +16,7 @@ function Cards({
   pic5,
   pic6,
   github,
-  description
+  description,
 }) {
   return (
           <div className="card" class="card bg-none text-white">

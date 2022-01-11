@@ -19,7 +19,9 @@ function Popup({
   pic5, 
   pic6, 
   github, 
+  buttLabel,
   description,
+  thisLink
  }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -52,12 +54,12 @@ function Popup({
                 </a>
               </button>
               <p className="projectDescription">{description}</p>
-              <img src={pic1} class="picCard" alt="pic1" />
-              <img src={pic2} class="picCard" alt="pic2" />
-              <img src={pic3} class="picCard" alt="pic3" />
-              <img src={pic4} class="picCard" alt="pic4" />
-              <img src={pic5} class="picCard" alt="pic5" />
-              <img src={pic6} class="picCard" alt="pic6" />
+              <img src={pic1} className="picCard" alt="pic1" />
+              <img src={pic2} className="picCard" alt="pic2" />
+              <img src={pic3} className="picCard" alt="pic3" />
+              <img src={pic4} className="picCard" alt="" />
+              <img src={pic5} className="picCard" alt="" />
+              <img src={pic6} className="picCard" alt="" />
             </div>
           }
           handleClose={togglePopup}
@@ -68,3 +70,4 @@ function Popup({
 }
 
 export default Popup;
+//<Button thisLink={thisLink} buttLabel={buttLabel}/>
