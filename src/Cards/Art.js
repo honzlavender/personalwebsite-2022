@@ -39,7 +39,7 @@ function Art() {
     <div className="col-cards">
     <div className="row-blurb">
       <h6 class="blurb-art">
-        Hi! I'm an illustrator and painter inspired by people and the stories attached to them 
+Enjoy my collection 
       </h6>
       <img src={art} alt="selfie" class="artist" />
     </div>

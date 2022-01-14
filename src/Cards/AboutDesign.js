@@ -29,8 +29,15 @@ function Playing() {
         <p className="play">
           <p className="hi">Hi!</p>
           <p className="copy">
-          i'm honz. <br/>my pronouns are she/they. <br/><br/>
-          There are 3 persons in me: The Queer, The Artist, & The Software Engineer
+            I'm Honz (she/they) <br /> I'm an illustrator & painter inspired by
+            people and the stories attached to them
+            {/* There are 3 persons in me: The Queer, The Artist, & The Software Engineer */}
+            <p className="paragraph">
+              I like to think of myself as a multi-media artist though I spend
+              most of my time illustrating. <br/>
+              Technically I'm a full-stack engineer but my passion is in
+              front-end & design.
+            </p>
           </p>
           <div className="bothButtons">
             <div className="emailButton">
@@ -87,6 +94,12 @@ function Playing() {
               )}
             </div>
           </div>
+          <p className="psh">
+            "I know I wasn't as handsome as some other guys, but I was OK with
+            that."
+            <br />
+            -Philip Seymour Hoffman
+          </p>
         </p>
       </div>
     </div>
@@ -104,7 +117,7 @@ export default Playing;
 }
 // <br />
 // <p style={{ textAlign: "right" }}>
-//   I like to think of myself as a multi-media artist though I spend
-//   most of my time illustrating.
+// I like to think of myself as a multi-media artist though I spend
+// most of my time illustrating.
 //Hi! I'm an illustrator and painter inspired by people and the stories attached to them
 // </p> */}
