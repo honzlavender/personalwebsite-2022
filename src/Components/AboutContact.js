@@ -14,9 +14,7 @@ function AboutContact() {
     <div className="AboutContact">
       <body className="about">
         <Link to="/" className="backHome">
-          <h1 className="backHome">
             <RiHomeHeartLine />
-          </h1>
         </Link>
         {/* <div className="boxBoy"> */}
         <AboutDesign /> {/*about me container */}

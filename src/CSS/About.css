@@ -6,27 +6,20 @@
 
 }
 
-/* border around aboutdesign */
-/* div.boxBoy {
-  padding: 10vw;
-  border: 5px solid #bfd7e3;
-  margin: 10vw;
-  height: 30vh;
-} */
-
 body.about {
   background-color: #e99797;
   padding-top: 4vw;
-  /* margin-bottom: 0; */
   width: 100%;
+  text-align: center;
 }
 
 /*RETURN HOME BUTTON*/
-a.backHome,
-h1.backhome {
+a.backHome {
+  text-align: center;
   color: #fff;
   padding-top: 2vh;
   margin-bottom: 0;
+  font-size: 2rem;
 }
 
 /*home icon hover*/
