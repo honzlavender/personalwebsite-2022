@@ -4,7 +4,6 @@ import Resume from "./Resume";
 
 import { RiBug2Line } from "react-icons/ri";
 
-// import babypic from "../Graphics/Home/babypic.jpg";
 import resume from "../Graphics/Home/resume.jpg";
 import resumePDF from "../Graphics/Home/resumePDF.pdf";
 
