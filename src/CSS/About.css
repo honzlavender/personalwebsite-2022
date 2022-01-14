@@ -3,13 +3,21 @@
   background-color: #e99797;
   display: flex;
   flex-direction: column;
+
 }
 
+/* border around aboutdesign */
+/* div.boxBoy {
+  padding: 10vw;
+  border: 5px solid #bfd7e3;
+  margin: 10vw;
+  height: 30vh;
+} */
+
 body.about {
-  /* background-color: #e0c3fc; */
   background-color: #e99797;
   padding-top: 4vw;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   width: 100%;
 }
 
@@ -39,10 +47,6 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
-.copy {
-  margin: 25px;
-}
-
 /*buttons on about me*/
 input.CV,
 a.email {
@@ -55,9 +59,9 @@ a.email {
   border-radius: 25px;
   border: none;
   font-size: clamp(16px, 50%, 300px);
-  padding: 2px 15px;
+  padding: 3px 15px;
   text-decoration: none;
-  margin-top: 4vw;
+  margin: 4% 3px;
   z-index: 1;
 }
 
@@ -70,15 +74,14 @@ a.email:hover {
 button.email {
   border: none;
   margin: 0;
+  padding: 0;
   text-decoration: none;
   background: none;
-  z-index: 1;
 }
 /*email button div*/
 div.emailButton {
   display: flex;
   justify-content: center;
-  z-index: 1;
 }
 
 /*MOBILE LAYOUT*/

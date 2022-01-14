@@ -2,15 +2,11 @@
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 
-import { RiBug2Line } from "react-icons/ri";
-
-//image
-
 //css
 import "../CSS/About.css";
 //icon
 import { RiHomeHeartLine } from "react-icons/ri";
-import Playing from "../Cards/Playing";
+import AboutDesign from "../Cards/AboutDesign"
 // import Playing from "../Cards/Playing";
 
 function AboutContact() {
@@ -22,7 +18,9 @@ function AboutContact() {
             <RiHomeHeartLine />
           </h1>
         </Link>
-        <Playing /> {/*about me container */}
+        {/* <div className="boxBoy"> */}
+        <AboutDesign /> {/*about me container */}
+        {/* </div> */}
       </body>
       <Footer />
     </div>
@@ -30,12 +28,3 @@ function AboutContact() {
 }
 
 export default AboutContact;
-
-//  <Link to="/">{<Home />}</Link>
-/*
-                    <a className="resume"
-                      href={resumePDF}
-                      download="ResumeOfficial.pdf"
-                    >
-                      Download Resume
-                    </a>*/

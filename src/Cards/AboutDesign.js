@@ -16,7 +16,7 @@ function Playing() {
   };
 
   return (
-    <>
+    <div className="boxBoy">
       <div class="container__play">
         <h1 className="homeBugs">
           <em class="planet right">
@@ -27,9 +27,11 @@ function Playing() {
           </em>
         </h1>
         <p className="play">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla harum
-          eaque ipsam magni autem id quod quae quas, facere eius quam? Ullam,
-          laboriosam.
+          <p className="hi">Hi!</p>
+          <p className="copy">
+          i'm honz. <br/>my pronouns are she/they. <br/><br/>
+          There are 3 persons in me: The Queer, The Artist, & The Software Engineer
+          </p>
           <div className="bothButtons">
             <div className="emailButton">
               <button type="button" class="email">
@@ -85,26 +87,24 @@ function Playing() {
               )}
             </div>
           </div>
-          {/* <div class="container__play"> */}
-          {/* <p className="play">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla harum
-        eaque ipsam magni autem id quod quae quas, facere eius quam? Ullam,
-        laboriosam. */}
         </p>
       </div>
-    </>
+    </div>
   );
 }
 
 export default Playing;
 
 // {/* <p>Hi hi! </p>
-// <p>
-//   My name is Honz, my pronouns are she/they, and I’m an artist &
-//   software engineer based in Brooklyn, USA.
-// </p>
+{
+  /* <p>
+  My name is Honz, my pronouns are she/they, and I’m an artist &
+  software engineer based in Brooklyn, USA.
+</p> */
+}
 // <br />
 // <p style={{ textAlign: "right" }}>
 //   I like to think of myself as a multi-media artist though I spend
 //   most of my time illustrating.
+//Hi! I'm an illustrator and painter inspired by people and the stories attached to them
 // </p> */}
