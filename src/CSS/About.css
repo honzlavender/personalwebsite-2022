@@ -1,73 +1,121 @@
 /*ABOUT ME FULL PAGE*/
-.about {
+.col-about {
   display: flex;
-  flex-direction: column;
-  background-color: #17333e;
+}
+
+.about{
+  background-color: #E99797;
+  padding-top: 4vw;
+  margin-bottom: 0;
+  width: 100%;
 }
 
 /*RETURN HOME BUTTON*/
-a.backHome {
+a.backHome,
+h1.backhome {
   color: #fff;
-  text-align: left;
-  margin: 5% 12vw 0;
+  padding-top: 2vh;
 }
 
 /*home icon hover*/
 a.backHome:hover {
-  color: #e7aff7;
+  color: #fff;
+  /* color: #e0c3fc; */
 }
 
-.row {
+/* h1 container floating bugs */
+h1.homeBugs {
+  margin: -5%;
+}
+
+.aboutBody {
   display: flex;
   flex-direction: row;
-  margin: 2vw;
+  justify-content: center;
+  margin: 2vw 15vw;
 }
 
 /*ABOUT ME PARAGRAPH*/
 p {
-  margin-right: 12vw;
+  font-size: clamp(18px, 50%, 300px);
   color: #fff;
-  font-size: 18px;
-  font-family: "Josefin Slab", serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.copy{
+  margin: 25px;
 }
 
 /*about me photo*/
 .babypic {
-  margin-left: 12vw;
-  width: auto;
-  height: 50vw;
+  height: 50;
+}
+/* both button containter */
+.bothButtons {
+  min-width: 10vw;
 }
 
-/*resume button on about me*/
-input.CV {
+/*buttons on about me*/
+input.CV,
+a.email {
+  display: flex;
+  justify-content: flex-end;
   font-family: "Josefin Slab", serif;
   text-align: center;
-  background: #bfd7e3;
-  color: #17333e;
+  background: #17333e;
+  color: #bfd7e3;
   border-radius: 25px;
   border: none;
-  font-size: 14px;
+  font-size: clamp(16px, 50%, 300px);
   padding: 5px 15px;
+  text-decoration: none;
   margin-top: 5vw;
+}
+
+
+/* using color of text because text-decoration didnt work */
+a.email:hover {
+  color: #bfd7e3;
+  /* text-decoration: none; */
+}
+/* //email button bg box*/
+button.email {
+  border: none;
+  text-decoration: none;
+  background: none;
+}
+/*email button div*/
+div.emailButton {
+  display: flex;
+  justify-content: center;
 }
 
 /*MOBILE LAYOUT*/
 @media only screen and (max-width: 500px) {
-  .babypic {
-    height: 102vw;
-    width: 75vw;
-    margin-bottom: 6vw;
+  /* display */
+  .col-about {
+    display: flex;
+    justify-content: center;
   }
 
-  div.col.babypic {
-    text-align: center;
+  .aboutBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2vw;
+  }
+  
+  .babypic {
+    height: 84vw;
+    width: auto;
   }
 
   /*only about me text*/
   p {
     text-align: left;
-    margin: 0 18vw;
+    margin: 0 15vw;
     color: #fff;
+    font-size: 100%;
   }
 
   /*about me copy div (text & button container)*/
@@ -75,9 +123,24 @@ input.CV {
     text-align: center;
   }
 
-  a.backHome {
+  a.backHome,
+  h1.backhome {
     color: #fff;
-    text-align: center;
-    margin: 3% 0;
   }
+
+/* h1 container floating bugs */
+  h1.homeBugs {
+    margin: -6% 0;
+  }
+
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+
+  .babypic {
+    height: 60vw;
+    width: auto;
+  }
+
+
 }

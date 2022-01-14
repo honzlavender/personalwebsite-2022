@@ -1,6 +1,8 @@
 //import { Card, Button } from "react-bootstrap";
 import "../CSS/Cards.css";
 import Cards from "./Cards";
+//import { RiGithubFill } from "react-icons/ri";
+
 
 //this file host the cards that appear on the toggle pages: Engineer & Artist
 //using image props i will insert each projects display image
@@ -36,6 +38,11 @@ import deckCards from "../Graphics/Engineer/FlashcardApp/deckCards.png"
 import editcard from "../Graphics/Engineer/FlashcardApp/editcard.png"
 import flashcard from "../Graphics/Engineer/FlashcardApp/flashcard.png"
 import flashcards404 from "../Graphics/Engineer/FlashcardApp/flashcards404.png"
+/**POMODORO TIMER */
+import pomodoro from "../Graphics/Engineer/Pomodoro/pomodoro.png"
+import onBreak from "../Graphics/Engineer/Pomodoro/onBreak.png"
+import pause from "../Graphics/Engineer/Pomodoro/pause.png"
+import working from "../Graphics/Engineer/Pomodoro/working.png"
 
 
 
@@ -45,13 +52,13 @@ function Engineer() {
       <div className="row-blurb">
         <img src={code} alt="selfie" class="engineer" />
         <h6 class="blurb">
-          Technically.. I'm a full-stack engineer but my passion is in front-end
-          developement & design.
+Here you can see my work as a baby software developer. It ain't much but it's honest work.
         </h6>
       </div>
       <div className="row-cards">
         <Cards
           cover={display}
+          buttLabel="github repo"
           projectName="portfolio"
           pic1={artToggle}
           pic2={artProject}
@@ -60,10 +67,11 @@ function Engineer() {
           pic5={devToggle}
           pic6={sillySketch}
           github="https://github.com/honzlavender/personal-website2022.git"
-          description={`sketches for this very website, illustrated in procreate, 2021`}
+          description={`this website right here was made with React using hooks, CSS, and patience, ideas and sketches illustrated in procreate. 2021`}
         />
         <Cards
           cover={moviesDesktop}
+          buttLabel="github repo"
           projectName="we love movies"
           pic1={moviesIphone}
           pic2={moviesIpad}
@@ -72,7 +80,7 @@ function Engineer() {
           pic5=""
           pic6=""
           github="https://github.com/honzlavender/WeLoveMovies.git"
-          description={`Back-End project using Node.js, Express, and Postgres. Built an API following RESTful design principles, created & customized a knexfile.js, connected databases, joined and nested data, and wrote database migrations using Knex. Connected to front-end react app and deployed to Heroku (cloud service)`}
+          description={`Back-End project using Node.js, Express, and Postgres. Built an API following RESTful design principles, created & customized a knexfile.js, connected databases, joined and nested data, and wrote database migrations using Knex. Connected to front-end react app and deployed to Heroku (cloud service), 2021`}
         />
       </div>
 
@@ -80,26 +88,28 @@ function Engineer() {
       <Cards
           cover={flashcard}
           projectName="flashcard app"
+          buttLabel="github repo"
           pic1={flashcard}
           pic2={alert}
           pic3={deckCards}
           pic4={editcard}
           pic5={card}
           pic6={flashcards404}
-          github="https://github.com/honzlavender/personal-website2022.git"
-          description={`sketches for this very website, illustrated in procreate, 2021`}
+          github="https://github.com/honzlavender/React-Flashcards.git"
+          description={`a flashcard app that anyone can study and create, edit, and delete decks and cards via forms. utilizing react hooks, react routers, and inline styling. made with react, 2021`}
         />
         <Cards
-          cover={moviesDesktop}
-          projectName="we love movies"
-          pic1={moviesIphone}
-          pic2={moviesIpad}
-          pic3={moviesDesktop}
+          cover={pomodoro}
+          buttLabel="github repo"
+          projectName="pomodoro timer"
+          pic1={working}
+          pic2={pause}
+          pic3={onBreak}
           pic4=""
           pic5=""
           pic6=""
-          github="https://github.com/honzlavender/WeLoveMovies.git"
-          description={`Back-End project using Node.js, Express, and Postgres. Built an API following RESTful design principles, created & customized a knexfile.js, connected databases, joined and nested data, and wrote database migrations using Knex. Connected to front-end react app and deployed to Heroku (cloud service)`}
+          github="https://github.com/honzlavender/pomodoro.git"
+          description={`the simplest and most modest pomodoro timer made with react, 2021`}
         />
       </div>
     </div>

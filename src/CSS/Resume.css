@@ -3,55 +3,51 @@
 Popup style */
 .popup-box {
   position: fixed;
-  background: #00000030;
   width: 100%;
-  height: 100vh;
+  height: auto;
   top: 0;
-  bottom: 30vw;
+  bottom: 2vw;
+  z-index: 1;
   left: 0;
 }
-
+ /*pink box*/
 .box {
+  text-align: center;
   position: relative;
-  width: 32%;
+  width: 45vw;
   margin: auto;
-  height: auto;
-  max-height: 100%;
+  /* height: 100%; */
+  max-height: 80vw;
   margin-top: calc(100vh - 90vh - 20px);
-  background: #f4cdcd;
+  background-color: #f4cdcd;
   border-radius: 4px;
-  padding: 20px 14px;
+  padding: 20px 0;
+  z-index: 1;
   overflow: auto;
-}
+} 
 
 .close-icon {
-  color: #bfd7e3;
+  color: #fff;
   content: "x";
   position: fixed;
-  right: calc(33% - 1px);
-  top: calc(100vh - 90vh - 33px);
-  background: #17333e;
-  width: 25px;
-  height: 25px;
+  right: calc(33% - 6vw);
+  top: calc(100vh - 90vh - 40px);
+  background: #e06b6b;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  line-height: 20px;
+  line-height: 30px;
   text-align: center;
   border: 1px solid #bfd7e3;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /*resume*/
-.container-resume {
+img.pic {
   text-align: center;
-  margin-top: 25px;
-}
-
-img {
-  text-align: center;
-  margin: 0vw;
-  width: 30vw;
-  height: auto;
-}
+  width: 90%;
+  margin: 1vw 0;
+} 
 
 a.resume {
   text-align: center;
@@ -68,15 +64,17 @@ button.btn {
   background: #17333e;
   border-radius: 25px;
   border: none;
-  font-size: 14px;
-  padding: 5px 15px;
+  font-size: 16px;
+  padding: 5px 11px;
   margin: 10px 10px;
 }
 
 @media only screen and (max-width: 500px) {
   /*resume jpg for popup*/
   img.pic {
-    display: none;
+    text-align: center;
+    width: 90%;
+    margin: 3vw 0;
   } 
 
   .container-resume {
@@ -95,14 +93,30 @@ button.btn {
 
   .box {
     position: relative;
-    width: 200px;
-    margin: 0 auto;
-    height: auto;
-    max-height: 80vw;
+    width: 90vw;
+    margin: 0 5vw;
+    height: 90vh;
+    max-height: 130vw;
     margin-top: calc(100vh - 90vh - 20px);
     background: #f4cdcd;
     border-radius: 4px;
     padding: 20px 10px;
     overflow: auto;
+  } 
+
+  .close-icon {
+    color: #fff;
+    content: "x";
+    position: fixed;
+    right: calc(33% - 115px);
+    top: calc(100vh - 90vh - 33px);
+    background: #e06b6b;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #e06b6b;
+    font-size: 14px;
   }
 }
