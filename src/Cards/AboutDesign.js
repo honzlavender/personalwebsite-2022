@@ -109,17 +109,3 @@ function Playing() {
 }
 
 export default Playing;
-
-// {/* <p>Hi hi! </p>
-{
-  /* <p>
-  My name is Honz, my pronouns are she/they, and I’m an artist &
-  software engineer based in Brooklyn, USA.
-</p> */
-}
-// <br />
-// <p style={{ textAlign: "right" }}>
-// I like to think of myself as a multi-media artist though I spend
-// most of my time illustrating.
-//Hi! I'm an illustrator and painter inspired by people and the stories attached to them
-// </p> */}
