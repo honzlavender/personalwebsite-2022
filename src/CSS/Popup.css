@@ -1,10 +1,10 @@
 /*POPUP FOR PROJECT CARDS*/
 /*card name buttons*/
 input.popup {
-  font-size: 2vw;
-  background: #e7aff7;
+  font-size: clamp(24px, 50%, 300px);
+  background: #e0c3fc;
   font-family: "Josefin Slab", serif;
-  color: #fff;
+  color: #8f6caf;
   border: none;
   border-radius: 25px;
   padding: 2px 5px 0;
@@ -59,7 +59,7 @@ input.popup {
 
 img.picCard {
   text-align: center;
-  margin: 2vw 0;
+  margin: 1vw 0;
   width: 80%;
   z-index: 1;
 }
@@ -95,7 +95,7 @@ p.projectDescription {
     color: #fff;
     content: "x";
     position: fixed;
-    right: calc(30% - 115px);
+    right: calc(30% - 80px);
     top: calc(100vh - 90vh - 33px);
     background: #e06b6b;
     /*background: #17333e;*/
@@ -109,7 +109,9 @@ p.projectDescription {
     z-index: 1;
   }
 
-  
+  input.popup {
+    font-size: 10px;
+  }
 
   /*card photos*/
   img.picCard {

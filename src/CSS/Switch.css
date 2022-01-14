@@ -3,8 +3,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
-  padding-top: 40px;
+  padding-bottom: 8%;
+  padding-top: 2%;
 }
 
 .react-switch-checkbox {
@@ -37,7 +37,7 @@
   height: 3vw;
   border-radius: 45px;
   transition: 0.4s;
-  background: #e7aff7;
+  background: #e0c3fc;
 }
 
 .react-switch-checkbox:checked + .react-switch-label .react-switch-button {
@@ -127,7 +127,7 @@
   height: 4.5vw;
   border-radius: 45px;
   transition: 0.4s;
-  background: #e7aff7;
+  background: #e0c3fc;
 }
 
 .react-switch-checkbox:checked + .react-switch-label .react-switch-button {

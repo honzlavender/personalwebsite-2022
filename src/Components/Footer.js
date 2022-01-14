@@ -41,6 +41,7 @@ function Footer() {
               <img className="imgMain" src={pp} alt="pp" />
               <img className="imgMain" src={blm} alt="blm" />
         </div>
+        <p className="copyright">© 2022 • Honz Williams • All Rights Reserved</p>
       </div>
     </footer>
   );

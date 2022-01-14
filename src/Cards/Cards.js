@@ -15,8 +15,15 @@ function Cards({
   pic4,
   pic5,
   pic6,
+  pic7,
+  pic8,
+  pic9,
+  pic10,
+  pic11,
+  pic12,
   github,
   description,
+  buttLabel
 }) {
   return (
           <div className="card" class="card bg-none text-white">
@@ -36,12 +43,19 @@ function Cards({
                   <Popup
                     projectName={projectName}
                     github={github}
+                    buttLabel={buttLabel}
                     pic1={pic1}
                     pic2={pic2}
                     pic3={pic3}
                     pic4={pic4}
                     pic5={pic5}
                     pic6={pic6}
+                    pic7={pic7}
+                    pic8={pic8}
+                    pic9={pic9}
+                    pic10={pic10}
+                    pic11={pic11}
+                    pic12={pic12}
                     description={description}
                   />
                 </button>

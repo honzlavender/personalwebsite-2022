@@ -21,10 +21,13 @@ function Home() {
           color: theme.color,
         }}
       >
+        <div className="aboutbox">
         <Link to="/aboutcontact" className="aboutcontact">
-          <h5>about && contact</h5>
+          {/* <h5>about && contact</h5> */}
+          about && contact
         </Link>
-        <h1>
+        </div>
+        <h1 className="bugs">
           <em>h</em>
           <em>o</em>
           {/*<em class="planet left">o</em>*/}
@@ -34,25 +37,22 @@ function Home() {
           </em>
           <em>williams</em>
         </h1>
+        <h1>
+          <em class="planet left">
+            <RiBug2Line />
+          </em>
+        </h1>
 
         <Switch toggleTheme={toggleTheme} />
         <h1>
-          <em class="planet right">
+          <em class="planet left" style={{fontSize: '8vw'}}>
             <RiBug2Line />
           </em>
-          <em class="planet left">
+          <em class="planet right" style={{fontSize: '12vw'}}>
             <RiBug2Line />
           </em>
         </h1>
         <Footer />
-        <h1>
-          <em class="planet right">
-            <RiBug2Line />
-          </em>
-          <em class="planet left">
-            <RiBug2Line />
-          </em>
-        </h1>
       </div>
     </div>
   );
