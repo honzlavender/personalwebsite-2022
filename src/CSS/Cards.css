@@ -39,14 +39,14 @@ button.btnButton {
 h6.blurb {
   font-family: "Raleway", sans-serif;
   text-align: left;
-  font-size: clamp(18px, 50%, 300px);
+  font-size: clamp(.8rem, 1.5rem, 4rem);
 }
 
 /*artist blurb*/
 h6.blurb-art {
   font-family: "Raleway", sans-serif;
   text-align: right;
-  font-size: clamp(18px, 50%, 300px);
+  font-size: clamp(.8rem, 1.5rem, 4rem);
 }
 
 /*col that holds blurbs and cards*/
@@ -89,7 +89,7 @@ img.artist {
 
   h6.blurb,
   h6.blurb-art {
-  font-size: clamp(10px, 50%, 300px);
+  font-size: clamp(.7rem, .9rem, 1rem);
   }
 
   div.col-cards {

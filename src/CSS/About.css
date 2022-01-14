@@ -1,10 +1,13 @@
 /*ABOUT ME FULL PAGE*/
-.col-about {
+.AboutContact {
+  background-color: #e99797;
   display: flex;
+  flex-direction: column;
 }
 
-.about{
-  background-color: #E99797;
+body.about {
+  /* background-color: #e0c3fc; */
+  background-color: #e99797;
   padding-top: 4vw;
   margin-bottom: 0;
   width: 100%;
@@ -15,6 +18,7 @@ a.backHome,
 h1.backhome {
   color: #fff;
   padding-top: 2vh;
+  margin-bottom: 0;
 }
 
 /*home icon hover*/
@@ -28,13 +32,6 @@ h1.homeBugs {
   margin: -5%;
 }
 
-.aboutBody {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 2vw 15vw;
-}
-
 /*ABOUT ME PARAGRAPH*/
 p {
   font-size: clamp(18px, 50%, 300px);
@@ -42,17 +39,8 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
-.copy{
+.copy {
   margin: 25px;
-}
-
-/*about me photo*/
-.babypic {
-  height: 50;
-}
-/* both button containter */
-.bothButtons {
-  min-width: 10vw;
 }
 
 /*buttons on about me*/
@@ -67,11 +55,11 @@ a.email {
   border-radius: 25px;
   border: none;
   font-size: clamp(16px, 50%, 300px);
-  padding: 5px 15px;
+  padding: 2px 15px;
   text-decoration: none;
-  margin-top: 5vw;
+  margin-top: 4vw;
+  z-index: 1;
 }
-
 
 /* using color of text because text-decoration didnt work */
 a.email:hover {
@@ -81,66 +69,36 @@ a.email:hover {
 /* //email button bg box*/
 button.email {
   border: none;
+  margin: 0;
   text-decoration: none;
   background: none;
+  z-index: 1;
 }
 /*email button div*/
 div.emailButton {
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 /*MOBILE LAYOUT*/
 @media only screen and (max-width: 500px) {
-  /* display */
-  .col-about {
-    display: flex;
-    justify-content: center;
-  }
-
-  .aboutBody {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 2vw;
-  }
-  
-  .babypic {
-    height: 84vw;
-    width: auto;
-  }
-
   /*only about me text*/
   p {
-    text-align: left;
-    margin: 0 15vw;
+    /* text-align: left; */
+    /* margin: 0 15vw; */
     color: #fff;
     font-size: 100%;
-  }
-
-  /*about me copy div (text & button container)*/
-  .copy {
-    text-align: center;
   }
 
   a.backHome,
   h1.backhome {
     color: #fff;
+    margin-bottom: 0;
   }
 
-/* h1 container floating bugs */
+  /* h1 container floating bugs */
   h1.homeBugs {
     margin: -6% 0;
   }
-
-}
-
-@media (min-width: 501px) and (max-width: 900px) {
-
-  .babypic {
-    height: 60vw;
-    width: auto;
-  }
-
-
 }

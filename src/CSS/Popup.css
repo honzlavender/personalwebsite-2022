@@ -1,7 +1,7 @@
 /*POPUP FOR PROJECT CARDS*/
 /*card name buttons*/
 input.popup {
-  font-size: clamp(24px, 50%, 300px);
+  font-size: clamp(16px, 50%, 300px);
   background: #e0c3fc;
   font-family: "Josefin Slab", serif;
   color: #8f6caf;
