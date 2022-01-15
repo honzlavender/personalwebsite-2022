@@ -12,20 +12,9 @@ Popup style */
   background-color: #f4cdcd;
   text-align: center;
 }
- /*pink box*/
-/* .box {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* width: 50%; 
-  background-color: #f4cdcd;
-  text-align: center;
-}  */
 
 span.close-icon {
   color: #e06b6b;
-  padding-left: 80%;
   font-size: 2rem;
   position: relative;
 }
@@ -95,40 +84,10 @@ button.btn {
   span.close-icon {
     color: #e06b6b;
     padding-top: 20%;
-    padding-left: 80%;
+    /* padding-left: 80%; */
     font-size: 2rem;
     position: relative;
   }
 
 
 }
-
-
-
-/*
-.popup-box {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
-  top: 0em;
-  z-index: 1;
-  left: 0;
-}
- /*pink box
-.box {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  align-content: center;
-  position: fixed;
-  width: 45vw;
-  max-height: 80vw;
-  margin: calc(100vh - 90vh - 20px);
-  background-color: #f4cdcd;
-  border-radius: 4px;
-  z-index: 1;
-  overflow: auto;
-} 
-*/

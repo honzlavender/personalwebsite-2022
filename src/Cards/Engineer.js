@@ -64,6 +64,12 @@ function Engineer() {
           pic4={devProject}
           pic5={devToggle}
           pic6={sillySketch}
+          pic7=""
+          pic8=""
+          pic9=""
+          pic10=""
+          pic11=""
+          pic12=""
           github="https://github.com/honzlavender/personalwebsite-2022.git"
           description={`this website right here was made with React using hooks, CSS, and patience, ideas and sketches illustrated in procreate. 2021`}
         />
@@ -77,6 +83,12 @@ function Engineer() {
           pic4=""
           pic5=""
           pic6=""
+          pic7=""
+          pic8=""
+          pic9=""
+          pic10=""
+          pic11=""
+          pic12=""
           github="https://github.com/honzlavender/WeLoveMovies.git"
           description={`Back-End project using Node.js, Express, and Postgres. Built an API following RESTful design principles, created & customized a knexfile.js, connected databases, joined and nested data, and wrote database migrations using Knex. Connected to front-end react app and deployed to Heroku (cloud service), 2021`}
         />
@@ -93,6 +105,12 @@ function Engineer() {
           pic4={editcard}
           pic5={card}
           pic6={flashcards404}
+          pic7=""
+          pic8=""
+          pic9=""
+          pic10=""
+          pic11=""
+          pic12=""
           github="https://github.com/honzlavender/React-Flashcards.git"
           description={`a flashcard app that anyone can study and create, edit, and delete decks and cards via forms. utilizing react hooks, react routers, and inline styling. made with react, 2021`}
         />
@@ -106,6 +124,12 @@ function Engineer() {
           pic4=""
           pic5=""
           pic6=""
+          pic7=""
+          pic8=""
+          pic9=""
+          pic10=""
+          pic11=""
+          pic12=""
           github="https://github.com/honzlavender/pomodoro.git"
           description={`the simplest and most modest pomodoro timer made with react, 2021`}
         />
