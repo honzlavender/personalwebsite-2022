@@ -28,10 +28,10 @@ function Playing() {
         <p className="play">
           <p className="hi">Hi!</p>
           <p className="copy">
-            I'm Honz (she/they) <br /> I'm an illustrator & painter inspired by
-            people and the stories attached to them
-              Technically I'm a full-stack engineer but my passion is in
-              front-end & design.
+            I'm Honz (she/they) <br /> I'm an illustrator, painter, and software engineer inspired by
+            people and the stories attached to them.
+            <br/>
+            Based in Brooklyn, USA
           </p>
           <div className="bothButtons">
             <div className="emailButton">
