@@ -64,7 +64,7 @@ function Engineer() {
           pic4={devProject}
           pic5={devToggle}
           pic6={sillySketch}
-          github="https://github.com/honzlavender/personal-website2022.git"
+          github="https://github.com/honzlavender/personalwebsite-2022.git"
           description={`this website right here was made with React using hooks, CSS, and patience, ideas and sketches illustrated in procreate. 2021`}
         />
         <Cards
