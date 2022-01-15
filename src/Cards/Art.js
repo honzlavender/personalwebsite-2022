@@ -103,8 +103,8 @@ function Art() {
       </div>
       <div className="row-cards">
         <Cards
-          cover={nicoleBoris}
-          // cover={Jorge}
+          // cover={nicoleBoris}
+          cover={girls}
           // cover={dustin}
           projectName="custom portraits"
           buttLabel="get your own"
