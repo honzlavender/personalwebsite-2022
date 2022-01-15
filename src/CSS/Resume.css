@@ -1,45 +1,33 @@
-/* POPUP FOR RESUME BUTTON
 
+
+/* POPUP FOR RESUME BUTTON
 Popup style */
-.popup-box {
+.popup-box,
+.box {
   position: fixed;
-  width: 100%;
-  height: auto;
-  top: 0;
-  bottom: 2vw;
-  z-index: 1;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  background-color: #f4cdcd;
+  text-align: center;
 }
  /*pink box*/
-.box {
-  text-align: center;
-  position: relative;
-  width: 45vw;
-  margin: auto;
-  /* height: 100%; */
-  max-height: 80vw;
-  margin-top: calc(100vh - 90vh - 20px);
-  background-color: #f4cdcd;
-  border-radius: 4px;
-  padding: 20px 0;
-  z-index: 1;
-  overflow: auto;
-} 
-
-.close-icon {
-  color: #fff;
-  content: "x";
+/* .box {
   position: fixed;
-  right: calc(33% - 6vw);
-  top: calc(100vh - 90vh - 40px);
-  background: #e06b6b;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  line-height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 50%; 
+  background-color: #f4cdcd;
   text-align: center;
-  border: 1px solid #bfd7e3;
-  font-size: 25px;
+}  */
+
+span.close-icon {
+  color: #e06b6b;
+  padding-left: 80%;
+  font-size: 2rem;
+  position: relative;
 }
 
 /*resume*/
@@ -50,6 +38,8 @@ img.pic {
 } 
 
 a.resume {
+  font-size: .9rem;
+  text-decoration: none;
   text-align: center;
   color: #bfd7e3;
   font-family: "Josefin Slab", serif;
@@ -64,9 +54,9 @@ button.btn {
   background: #17333e;
   border-radius: 25px;
   border: none;
-  font-size: 16px;
+  font-size: .9rem;
   padding: 5px 11px;
-  margin: 10px 10px;
+  margin: 1.5em;
 }
 
 @media only screen and (max-width: 500px) {
@@ -79,44 +69,66 @@ button.btn {
 
   .container-resume {
     text-align: center;
-    margin: 0 0 2vw 0;
+    /* margin: 0 0 2vw 0; */
   }
 
   button.btn {
     background: #17333e;
     border-radius: 25px;
     border: none;
-    font-size: 14px;
+    font-size: .2rem;
     padding: 5px 15px;
-    margin: 10px 10px;
+    margin: 10px 10px 12px;
   }
 
+  .popup-box,
   .box {
-    position: relative;
-    width: 90vw;
-    margin: 0 5vw;
-    height: 90vh;
-    max-height: 130vw;
-    margin-top: calc(100vh - 90vh - 20px);
-    background: #f4cdcd;
-    border-radius: 4px;
-    padding: 20px 10px;
-    overflow: auto;
-  } 
-
-  .close-icon {
-    color: #fff;
-    content: "x";
     position: fixed;
-    right: calc(33% - 115px);
-    top: calc(100vh - 90vh - 33px);
-    background: #e06b6b;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    line-height: 20px;
+    top: 45%;
+    left: 45%;
+    transform: translate(-45%, -45%);
+    width: 90%;
+    background-color: #f4cdcd;
     text-align: center;
-    border: 1px solid #e06b6b;
-    font-size: 14px;
   }
+
+  span.close-icon {
+    color: #e06b6b;
+    padding-top: 20%;
+    padding-left: 80%;
+    font-size: 2rem;
+    position: relative;
+  }
+
+
 }
+
+
+
+/*
+.popup-box {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0em;
+  z-index: 1;
+  left: 0;
+}
+ /*pink box
+.box {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  position: fixed;
+  width: 45vw;
+  max-height: 80vw;
+  margin: calc(100vh - 90vh - 20px);
+  background-color: #f4cdcd;
+  border-radius: 4px;
+  z-index: 1;
+  overflow: auto;
+} 
+*/

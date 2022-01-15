@@ -39,7 +39,7 @@ function Art() {
     <div className="col-cards">
     <div className="row-blurb">
       <h6 class="blurb-art">
-some recent art i've been doing for fun, for the gram, for friends, and for money
+      I like to think of myself as a multi-media artist though I spend most of my time illustrating
       </h6>
       <img src={art} alt="selfie" class="artist" />
     </div>

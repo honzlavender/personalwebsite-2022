@@ -3,7 +3,6 @@ import "../CSS/Cards.css";
 import Cards from "./Cards";
 //import { RiGithubFill } from "react-icons/ri";
 
-
 //this file host the cards that appear on the toggle pages: Engineer & Artist
 //using image props i will insert each projects display image
 //project card 1: portfolio/website - graphics
@@ -32,19 +31,17 @@ import moviesIphone from "../Graphics/Engineer/WeLoveMovies/moviesIphone.jpg";
 import moviesIpad from "../Graphics/Engineer/WeLoveMovies/moviesIpad.jpg";
 import moviesDesktop from "../Graphics/Engineer/WeLoveMovies/moviesDesktop.png";
 /**FLASHCARD APP */
-import alert from "../Graphics/Engineer/FlashcardApp/alert.png"
-import card from "../Graphics/Engineer/FlashcardApp/card.png"
-import deckCards from "../Graphics/Engineer/FlashcardApp/deckCards.png"
-import editcard from "../Graphics/Engineer/FlashcardApp/editcard.png"
-import flashcard from "../Graphics/Engineer/FlashcardApp/flashcard.png"
-import flashcards404 from "../Graphics/Engineer/FlashcardApp/flashcards404.png"
+import alert from "../Graphics/Engineer/FlashcardApp/alert.png";
+import card from "../Graphics/Engineer/FlashcardApp/card.png";
+import deckCards from "../Graphics/Engineer/FlashcardApp/deckCards.png";
+import editcard from "../Graphics/Engineer/FlashcardApp/editcard.png";
+import flashcard from "../Graphics/Engineer/FlashcardApp/flashcard.png";
+import flashcards404 from "../Graphics/Engineer/FlashcardApp/flashcards404.png";
 /**POMODORO TIMER */
-import pomodoro from "../Graphics/Engineer/Pomodoro/pomodoro.png"
-import onBreak from "../Graphics/Engineer/Pomodoro/onBreak.png"
-import pause from "../Graphics/Engineer/Pomodoro/pause.png"
-import working from "../Graphics/Engineer/Pomodoro/working.png"
-
-
+import pomodoro from "../Graphics/Engineer/Pomodoro/pomodoro.png";
+import onBreak from "../Graphics/Engineer/Pomodoro/onBreak.png";
+import pause from "../Graphics/Engineer/Pomodoro/pause.png";
+import working from "../Graphics/Engineer/Pomodoro/working.png";
 
 function Engineer() {
   return (
@@ -52,7 +49,8 @@ function Engineer() {
       <div className="row-blurb">
         <img src={code} alt="selfie" class="engineer" />
         <h6 class="blurb">
-Here you can see my work as a baby software developer. It ain't much but it's honest work.
+          Technically I'm a full-stack engineer but my passion is in front-end &
+          design.
         </h6>
       </div>
       <div className="row-cards">
@@ -85,7 +83,7 @@ Here you can see my work as a baby software developer. It ain't much but it's ho
       </div>
 
       <div className="row-cards">
-      <Cards
+        <Cards
           cover={flashcard}
           projectName="flashcard app"
           buttLabel="github repo"

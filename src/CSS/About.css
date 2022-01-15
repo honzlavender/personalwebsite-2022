@@ -3,12 +3,13 @@
   background-color: #e99797;
   display: flex;
   flex-direction: column;
-
+  padding-top: 3vh;
 }
 
 body.about {
   background-color: #e99797;
-  padding-top: 4vw;
+  /* margin-top: 3vh; */
+  /* padding-top: 4vw; */
   width: 100%;
   text-align: center;
 }
@@ -17,9 +18,9 @@ body.about {
 a.backHome {
   text-align: center;
   color: #fff;
-  padding-top: 2vh;
-  margin-bottom: 0;
-  font-size: 2rem;
+  /* margin-top: 2vh; */
+  /* margin-bottom: 0; */
+  font-size: 3rem;
 }
 
 /*home icon hover*/
@@ -55,7 +56,7 @@ a.email {
   padding: 3px 15px;
   text-decoration: none;
   margin: 4% 3px;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 /* using color of text because text-decoration didnt work */

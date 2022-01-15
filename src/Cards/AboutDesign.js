@@ -30,15 +30,8 @@ function Playing() {
           <p className="copy">
             I'm Honz (she/they) <br /> I'm an illustrator & painter inspired by
             people and the stories attached to them
-            <br/>
-            <br/>
-            {/* There are 3 persons in me: The Queer, The Artist, & The Software Engineer */}
-            <p className="paragraph">
-              I like to think of myself as a multi-media artist though I spend most of my time illustrating. <br/>
-            <br/>
               Technically I'm a full-stack engineer but my passion is in
               front-end & design.
-            </p>
           </p>
           <div className="bothButtons">
             <div className="emailButton">

@@ -9,6 +9,8 @@
   width: 35vw;
   margin: 1vw;
   align-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
 div.cards {
@@ -23,10 +25,10 @@ button.btnButton {
   color: #8f6caf;
   border: none;
   border-radius: 25px;
-  padding: 5px 12px;
+  /* padding: 5px 12px; */
   text-transform: lowercase;
   transition-duration: 0.4s;
-  margin: 1px;
+  margin: 0px;
 }
 
 /*button placement*/
@@ -89,7 +91,7 @@ img.artist {
 
   h6.blurb,
   h6.blurb-art {
-  font-size: clamp(.7rem, .9rem, 1rem);
+  font-size: clamp(.5rem, 40%, 300px);
   }
 
   div.col-cards {

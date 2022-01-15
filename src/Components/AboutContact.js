@@ -16,9 +16,7 @@ function AboutContact() {
         <Link to="/" className="backHome">
             <RiHomeHeartLine />
         </Link>
-        {/* <div className="boxBoy"> */}
         <AboutDesign /> {/*about me container */}
-        {/* </div> */}
       </body>
       <Footer />
     </div>

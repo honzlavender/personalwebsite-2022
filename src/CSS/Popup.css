@@ -1,13 +1,15 @@
+
+
 /*POPUP FOR PROJECT CARDS*/
 /*card name buttons*/
 input.popup {
-  font-size: clamp(16px, 50%, 300px);
+  font-size: clamp(14px, 80%, 300px);
   background: #e0c3fc;
   font-family: "Josefin Slab", serif;
   color: #8f6caf;
   border: none;
   border-radius: 25px;
-  padding: 2px 5px 0;
+  padding: 1vw;
   text-transform: lowercase;
   z-index: 1;
 }
@@ -43,16 +45,16 @@ input.popup {
   color: #fff;
   content: "x";
   position: fixed;
-  right: calc(28% - 13px);
-  top: calc(100vh - 90vh - 33px);
+  right: calc(31% - 30px);
+  top: calc(100vh - 87vh - 33px);
   background: #e06b6b;
   /*background: #17333e;*/
-  width: 25px;
-  height: 25px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
-  line-height: 22px;
+  line-height: 2.5rem;
   text-align: center;
-  font-size: 15px;
+  font-size: 2rem;
   /*border: 1px solid #bfd7e3;*/
   z-index: 1;
 }
@@ -95,22 +97,22 @@ p.projectDescription {
     color: #fff;
     content: "x";
     position: fixed;
-    right: calc(30% - 80px);
-    top: calc(100vh - 90vh - 33px);
+    right: calc(22% - 40px);
+    top: calc(100vh - 86vh - 30px);
     background: #e06b6b;
     /*background: #17333e;*/
-    width: 25px;
-    height: 25px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
-    line-height: 22px;
+    line-height: 6vw;
     text-align: center;
-    font-size: 15px;
+    font-size: 1.5rem;
     /*border: 1px solid #bfd7e3;*/
     z-index: 1;
   }
 
   input.popup {
-    font-size: 10px;
+  font-size: clamp(8px, 90%, 300px);
   }
 
   /*card photos*/
