@@ -1,0 +1,55 @@
+html, 
+body, 
+#background { 
+  width: 100vw;
+  min-height: 100vh;
+  background-color: currentColor;
+}
+
+.App {
+  height: 100%;
+  color: currentColor;
+}
+
+div.aboutbox {
+  padding: 5vw 0 10vw;
+}
+
+/* bugs */
+.bugs{
+  margin: -5% 0;
+}
+
+.aboutcontact {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-style: italic;
+  color: #fff;
+  font-family: "Josefin Slab", serif;
+  text-transform: lowercase;
+  font-weight: bold;
+  font-size: clamp(18px, 50%, 300px);
+  padding: 0;
+}
+
+.aboutcontact:hover {
+  color: #e0c3fc;
+}
+
+.home {
+  width: 101vw;
+}
+
+@media only screen and (max-width: 500px) {
+  .name {
+    font-size: 15vw;
+  }
+}
+
+/*IPAD LAYOUT*/
+@media (min-width: 501px) and (max-width: 900px) {
+  .name {
+    font-size: 15vw;
+  }
+}
