@@ -126,7 +126,7 @@ function Art() {
         <Cards
           cover={shons}
           projectName="storyboards"
-          buttLabel="kenneth play - NSFW"
+          buttLabel="email me for a story board"
           pic1={hannah}
           pic2={smidge}
           pic3={shons}
@@ -139,7 +139,7 @@ function Art() {
           pic10=""
           pic11=""
           pic12=""
-          github="https://kennethplay.com/"
+          github="mailto:hellohonz@gmail.com?body=Hi Honz!"
           description={`Similar to the custom portraits, this project is where I bring memories to life in the form of a comic.`}
         />
       </div>

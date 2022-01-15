@@ -39,7 +39,7 @@ function Playing() {
                 <a
                   className="email"
                   target="_blank"
-                  href="mailto:hellohonz@gmail.com?body=My custom mail body"
+                  href="mailto:hellohonz@gmail.com?body=Hi Honz!"
                   download="HonzWilliamsResume.pdf"
                   rel="noreferrer"
                   style={{ textDecoration: "none" }}
