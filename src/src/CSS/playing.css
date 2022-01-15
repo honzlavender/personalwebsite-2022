@@ -1,0 +1,140 @@
+div.boxBoy {
+  border: 15px inset #bfd7e3;
+  /* margin: 0 11vw 0 13vw; */
+  margin: 2vw 13vw;
+  height: 75vh;
+  width: 80vw;
+  /* background-color: #bfd7e3; */
+}
+
+.container__play {
+  position: absolute;
+
+  margin: 0 auto;
+  padding: 0;
+
+  height: 70%;
+  width: 75%;
+
+  top: 15%;
+  left: 0;
+  right: 0;
+  /* bottom: 10%; */
+
+  background: url("../Graphics/Home/babypic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 35% center;
+}
+
+p.hi {
+  font-size: 10rem;
+  text-align: center;
+  padding: 0%;
+  font-family: serif;
+  margin: 0;
+  line-height: 111%;
+}
+
+p.copy {
+  color: #17333e;
+  font-weight:400;
+  font-size: 1rem;
+  margin-bottom: 4vh;
+}
+
+p.play {
+  position: fixed;
+  display: inline-block;
+
+  /* margin: 20vw auto; */
+  padding: 0% 1rem;
+
+  top: 10%;
+  left: 15%;
+
+  /* min-height: 70%; */
+  width: 55%;
+  max-width: 250px;
+  min-width: 150px;
+
+  font-family: "Raleway";
+  font-size: .9rem;
+  text-align: left;
+  text-transform: lowercase;
+  /* letter-spacing: 0.5rem; */
+  /* line-height: 1rem; */
+  color: #17333e;
+
+  background-color: rgba(255, 255, 255, 0.534);
+  border: 5px solid #e99797;
+}
+
+/* psh quote  */
+p.psh{
+  color: #17333e;
+    text-align: right;
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 5vh;
+}
+
+p.paragraph{
+  color: #17333e;
+  /* text-align: right; */
+  font-size: 1rem;
+}
+
+ @media only screen and (max-width: 500px) {
+.container__play {
+    top: 14%;
+}
+
+  p.play {
+    top: 53%;
+    width: 60%;
+  }
+
+  p.hi {
+    font-size: 5rem;
+    text-align: left;
+    /* padding-bottom: 15%; */
+    padding: 3% 0 12% 0;
+    font-family: serif;
+    margin: 0;
+    line-height: 10%;
+  }
+
+  div.boxBoy {
+    border: 15px inset #bfd7e3;
+    /* margin: 0 11vw 0 13vw; */
+    margin: 2vw 16vw;
+    height: 75vh;
+    width: 78vw;
+    /* background-color: #bfd7e3; */
+  }
+
+/* psh quote  */
+p.psh{
+  text-align: right;
+  font-style: italic;
+  font-size: .8rem;
+  margin-top: 1vh;
+}
+
+p.paragraph{
+color: #17333e;
+text-align: right;
+font-size: .7rem;
+padding: 8px 0 0;
+}
+
+p.pLeft,
+p.copy {
+color: #17333e;
+/* text-align: right; */
+font-size: .7rem;
+padding: 0px;
+margin: 0;
+}
+} 
