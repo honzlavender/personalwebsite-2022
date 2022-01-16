@@ -1,45 +1,57 @@
+// //theme js
 
-import React from 'react';
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useState } from "react";
 
 //import Portfolio from '../Cards/Portfolio';
 //import AboutContact from './AboutContact';
-
+//import Art from "../Cards/Art";
+//import Engineer from "../Cards/Engineer";
 
 export let themes = {
-    engineer: {
-        backgroundColor: "#17333e",
-        color: "#bfd7e3",
-    },
-    artist: {
-        backgroundColor: "#bfd7e3",
-        color: "#17333e",
-    },
+  engineer: {
+    backgroundColor: "#17333e",
+    color: "#bfd7e3",
+  },
+  artist: {
+    backgroundColor: "#bfd7e3",
+    color: "#17333e",
+  },
 };
+
+const initialValue = {
+    engineer: true,
+    theme: themes.engineer,
+    toggleTheme: () => {}
+}
 
 export const Themes = createContext();
 
-export const ThemeProvider = ({children}) => {
-    const [isDark, setIsDark] =useState(true);
-    const toggleTheme = () => {
-        localStorage.setItem("isDark", JSON.stringify(!isDark));
-        setIsDark(!isDark);
-    };
+export const ThemeProvider = ({ children }) => {
+  const [dark, setDark] = useState("dark");
 
-
-
-
-    const theme = isDark ? themes.engineer : themes.artist;
-
-    useEffect(() => {
-        const isDark = localStorage.getItem("isDark") === "true";
-        setIsDark(isDark);
-    }, []);
-
-    return (
-        
-        <Themes.Provider value={[{ theme, isDark }, toggleTheme]}>
-            {children}
-        </Themes.Provider>
-    );
+  const toggleTheme = (initialValue = true) => {
+    // const isDark = !dark
+  sessionStorage.setItem("dark", JSON.stringify(dark));
+  setDark(!dark);
 };
+
+
+//true = dark
+ console.log(dark)
+
+  // useEffect(() => {
+  //   const dark = localStorage.getItem("dark") === "true";
+  //   setDark(!dark);
+  // }, []);
+
+
+
+  const theme = dark ? themes.engineer : themes.artist;
+
+  return (
+     <Themes.Provider value={[{ theme }, toggleTheme]}> 
+      {children}
+    </Themes.Provider>
+  );
+};
+

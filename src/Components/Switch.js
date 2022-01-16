@@ -1,13 +1,16 @@
 import React from "react";
+//import { useContext } from "react";
 import "../CSS/Switch.css";
 import { RiMoonClearLine, RiSunLine } from "react-icons/ri";
 import Art from "../Cards/Art";
 import Engineer from "../Cards/Engineer";
-//import Portfolio from "../Cards/Portfolio";
+//import { Themes } from "./Theme";
 
-const Switch = ({ toggleTheme }) => {
+const Switch = ({toggleTheme}) => {
   const [isOn, toggleIsOn] = useToggle();
 
+
+//content on toggle: art or engineer projects
   function useToggle(initialValue = false) {
     const [value, setValue] = React.useState(initialValue);
     const toggle = React.useCallback(() => {
@@ -15,9 +18,9 @@ const Switch = ({ toggleTheme }) => {
     }, []);
     return [value, toggle];
   }
-   
-  //const poop = isOn ? <Portfolio/> : <Art />
 
+  //when isOn is true it displays artist
+//  console.log(isOn)
 
 
   return (
@@ -53,6 +56,3 @@ const Switch = ({ toggleTheme }) => {
 };
 
 export default Switch;
-
-//onClick={toggleTheme}
-//      <button onClick={toggleIsOn}>Press me</button>

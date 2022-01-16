@@ -7,7 +7,7 @@ input.popup {
   color: #8f6caf;
   border: none;
   border-radius: 25px;
-  padding: 1vw;
+  padding: 0;
   text-transform: lowercase;
   z-index: 1;
 }

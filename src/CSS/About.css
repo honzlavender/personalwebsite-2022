@@ -18,8 +18,6 @@ body.about {
 a.backHome {
   text-align: center;
   color: #fff;
-  /* margin-top: 2vh; */
-  /* margin-bottom: 0; */
   font-size: 3rem;
 }
 
@@ -30,8 +28,9 @@ a.backHome:hover {
 }
 
 /* h1 container floating bugs */
-h1.homeBugs {
+h1.s {
   margin: -5%;
+  z-index: -1;
 }
 
 /*ABOUT ME PARAGRAPH*/
@@ -62,7 +61,6 @@ a.email {
 /* using color of text because text-decoration didnt work */
 a.email:hover {
   color: #bfd7e3;
-  /* text-decoration: none; */
 }
 /* //email button bg box*/
 button.email {
@@ -81,9 +79,7 @@ div.emailButton {
 /*MOBILE LAYOUT*/
 @media only screen and (max-width: 500px) {
   /*only about me text*/
-  p {
-    /* text-align: left; */
-    /* margin: 0 15vw; */
+  p { 
     color: #fff;
     font-size: 100%;
   }
@@ -97,5 +93,6 @@ div.emailButton {
   /* h1 container floating bugs */
   h1.homeBugs {
     margin: -6% 0;
+    z-index: -1;
   }
 }

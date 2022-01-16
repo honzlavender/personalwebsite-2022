@@ -1,6 +1,6 @@
-html, 
-body, 
-#background { 
+html,
+body,
+#background {
   width: 100vw;
   min-height: 100vh;
   background-color: currentColor;
@@ -16,8 +16,9 @@ div.aboutbox {
 }
 
 /* bugs */
-.bugs{
+.bugs {
   margin: -5% 0;
+  z-index: -1;
 }
 
 .aboutcontact {
