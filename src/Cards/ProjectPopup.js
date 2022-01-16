@@ -1,6 +1,6 @@
 import React from "react";
 import { RiCloseCircleFill } from "react-icons/ri";
-
+//resume popup
 
 const Project = props => {
   return (

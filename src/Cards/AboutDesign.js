@@ -2,6 +2,8 @@ import "../CSS/playing.css";
 import React, { useState } from "react";
 import Resume from "./Resume";
 
+//RESUME AND BOX BLURB WITH ABOUT ME INFO
+
 import { RiBug2Line } from "react-icons/ri";
 
 import resume from "../Graphics/Home/resume.jpg";

@@ -28,6 +28,7 @@ div.aboutbox {
   font-style: italic;
   color: #fff;
   font-family: "Josefin Slab", serif;
+  /* font-family: 'PT Serif', serif; */
   text-transform: lowercase;
   font-weight: bold;
   font-size: clamp(18px, 50%, 300px);

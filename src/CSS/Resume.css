@@ -4,14 +4,31 @@
 Popup style */
 .popup-box,
 .box {
+  /*Position and width*/
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50vw;
+  width: 40em;
+  height: fit-content;
+  
+  /*NOTE: If you want your modal's position to be absolute or fixed, you should also include:*/
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  
+  /*Centering horizintally*/
+  margin: auto;
   background-color: #f4cdcd;
-  text-align: center;
+text-align: center;
 }
+
+/* position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 50vw;
+background-color: #f4cdcd;
+text-align: center; */
 
 span.close-icon {
   color: #e06b6b;
@@ -23,7 +40,7 @@ span.close-icon {
 img.pic {
   text-align: center;
   width: 90%;
-  margin: 1vw 0;
+  margin: 1vw 0 0;
 } 
 
 a.resume {
@@ -45,7 +62,7 @@ button.btn {
   border: none;
   font-size: .9rem;
   padding: 5px 11px;
-  margin: 1.5em;
+  margin: 1.5em .6em;
 }
 
 @media only screen and (max-width: 500px) {
@@ -58,7 +75,6 @@ button.btn {
 
   .container-resume {
     text-align: center;
-    /* margin: 0 0 2vw 0; */
   }
 
   button.btn {

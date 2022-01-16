@@ -8,10 +8,11 @@ h1 {
 
 em {
   font-family: "Josefin Slab", serif;
+  /* font-family: 'PT Serif', serif; */
   color: currentColor;
   /*color: currentColor;*/
   font-size: 14vmin;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-style: normal;
   text-align: center;
 }
