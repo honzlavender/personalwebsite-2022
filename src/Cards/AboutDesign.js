@@ -6,7 +6,7 @@ import Resume from "./Resume";
 
 import { RiBug2Line } from "react-icons/ri";
 
-import resume from "../Graphics/Home/resume.jpg";
+import resume from "../Graphics/Home/resume.png";
 import resumePDF from "../Graphics/Home/resumePDF.pdf";
 
 function Playing() {
