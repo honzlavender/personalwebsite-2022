@@ -21,14 +21,6 @@ function Footer() {
               <RiInstagramLine />
             </a>
             <a
-              href="https://twitter.com/honzlavender"
-              className="social"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <RiTwitterLine />
-            </a>
-            <a
               href="https://github.com/honzlavender"
               className="social"
               target="_blank"
@@ -48,3 +40,14 @@ function Footer() {
 }
 
 export default Footer;
+
+
+
+{/* <a
+href="https://twitter.com/honzlavender"
+className="social"
+target="_blank"
+rel="noreferrer"
+>
+<RiTwitterLine />
+</a> */}
