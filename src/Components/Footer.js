@@ -4,7 +4,7 @@ import pp from "../Graphics/Home/pp.jpg";
 import blm from "../Graphics/Home/blm.jpg";
 import pride from "../Graphics/Home/pride.jpg";
 //icons
-import { RiTwitterLine, RiInstagramLine, RiGithubFill } from "react-icons/ri";
+import { RiLinkedinBoxFill, RiInstagramLine, RiGithubFill } from "react-icons/ri";
 
 function Footer() {
   return (
@@ -28,12 +28,22 @@ function Footer() {
             >
               <RiGithubFill />
             </a>
+            <a
+              href="https://www.linkedin.com/in/honz/"
+              className="social"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <RiLinkedinBoxFill />
+            </a>
+          </div>
+          <img className="imgMain" src={pride} alt="pride" />
+          <img className="imgMain" src={pp} alt="pp" />
+          <img className="imgMain" src={blm} alt="blm" />
         </div>
-              <img className="imgMain" src={pride} alt="pride" />
-              <img className="imgMain" src={pp} alt="pp" />
-              <img className="imgMain" src={blm} alt="blm" />
-        </div>
-        <p className="copyright">© 2022 • Honz Williams • All Rights Reserved</p>
+        <p className="copyright">
+          © 2022 • Honz Williams • All Rights Reserved
+        </p>
       </div>
     </footer>
   );
@@ -41,13 +51,13 @@ function Footer() {
 
 export default Footer;
 
-
-
-{/* <a
+{
+  /* <a
 href="https://twitter.com/honzlavender"
 className="social"
 target="_blank"
 rel="noreferrer"
 >
 <RiTwitterLine />
-</a> */}
+</a> */
+}
