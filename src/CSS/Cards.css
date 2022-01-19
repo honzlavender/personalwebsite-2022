@@ -26,7 +26,7 @@ button.btnButton {
   color: #8f6caf;
   border: none;
   border-radius: 25px;
-  padding: 0px 12px;
+  padding: 3px 12px;
   text-transform: lowercase;
   transition-duration: 0.4s;
   margin: 0px;
@@ -42,14 +42,14 @@ button.btnButton {
 h6.blurb {
   font-family: "Raleway", sans-serif;
   text-align: left;
-  font-size: clamp(.8rem, 1.5rem, 4rem);
+  font-size: clamp(0.8rem, 1.5rem, 4rem);
 }
 
 /*artist blurb*/
 h6.blurb-art {
   font-family: "Raleway", sans-serif;
   text-align: right;
-  font-size: clamp(.8rem, 1.5rem, 4rem);
+  font-size: clamp(0.8rem, 1.5rem, 4rem);
 }
 
 /*col that holds blurbs and cards*/
@@ -92,7 +92,7 @@ img.artist {
 
   h6.blurb,
   h6.blurb-art {
-  font-size: clamp(.5rem, 40%, 300px);
+    font-size: clamp(0.7rem, 40%, 300px);
   }
 
   div.col-cards {
@@ -100,12 +100,11 @@ img.artist {
     flex-direction: column;
     align-items: center;
   }
-  
 
   div.row-blurb {
-    display: flex;
-    align-items: center;
-    margin: 0 0px 10px;
+    /* display: flex; */
+    /* align-items: center; */
+    margin: 10px 0;
   }
 
   div.row-cards {
@@ -119,6 +118,26 @@ img.artist {
     height: 11vw;
     margin: 0 5px;
   }
+
+  button.btnButton {
+    font-size: 4vw;
+  }
+
+  .card {
+    margin: 2vw;
+    width: 40vw;
+    height: auto;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 26vw;
+  }
+
+  div.col-cards {
+    margin: 3vw;
+    width: 80%;
+  }
 }
 
 /*IPAD LAYOUT*/
@@ -131,7 +150,7 @@ img.artist {
 
   h6.blurb,
   h6.blurb-art {
-  font-size: clamp(14px, 50%, 300px);
+    font-size: clamp(14px, 50%, 300px);
   }
 
   div.col-cards {
