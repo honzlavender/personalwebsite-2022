@@ -87,8 +87,8 @@ p.projectDescription {
 
   input.popup {
     font-size: clamp(8px, 90%, 300px);
-    white-space: normal;
-    word-wrap: break-word;
+    /* white-space: normal;
+    word-wrap: break-word; */
   }
 
   /*card photos*/

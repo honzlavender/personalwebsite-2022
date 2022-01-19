@@ -55,7 +55,6 @@ function Popup({
                   rel="noreferrer"
                   style={{textDecoration: 'none'}}
                 >
-                  {" "}
               {buttLabel}
                 </a>
               </button>
