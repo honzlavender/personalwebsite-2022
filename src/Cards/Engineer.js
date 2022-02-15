@@ -97,7 +97,7 @@ function Engineer() {
           pic11=""
           pic12=""
           github="https://github.com/honzlavender/reservation-app.git"
-          description={`periodic tables is the final capstone project for thinkful's engineering bootcamp. A full-stack application that is intended for restaurants, bars, or any other spaces that take reservations.`}
+          description={`periodic tables is the final capstone project for thinkful's engineering bootcamp. A full-stack application that is intended for restaurants, bars, or any other spaces that take reservations. built using React and CSS for front-end, Node.js and Knex for back-end, and DBeaver for the databases.`}
           newLine={"sketches illustrated in procreate, 2022"}
           optionalLink={<ResButton/>}
         />
