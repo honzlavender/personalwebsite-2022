@@ -1,0 +1,27 @@
+    **Movies Card and Graphics**
+
+    /**WE LOVE MOVIES */
+//display
+import moviesIphone from "../Graphics/Engineer/WeLoveMovies/moviesIphone.jpg";
+import moviesIpad from "../Graphics/Engineer/WeLoveMovies/moviesIpad.jpg";
+import moviesDesktop from "../Graphics/Engineer/WeLoveMovies/moviesDesktop.png";
+        
+        <Cards
+          cover={moviesDesktop}
+          buttLabel="github repo"
+          projectName="we love movies"
+          pic1={moviesIphone}
+          pic2={moviesIpad}
+          pic3={moviesDesktop}
+          pic4=""
+          pic5=""
+          pic6=""
+          pic7=""
+          pic8=""
+          pic9=""
+          pic10=""
+          pic11=""
+          pic12=""
+          github="https://github.com/honzlavender/WeLoveMovies.git"
+          description={`Back-End project using Node.js, Express, and Postgres. Built an API following RESTful design principles, created & customized a knexfile.js, connected databases, joined and nested data, and wrote database migrations using Knex. Connected to front-end react app and deployed to Heroku (cloud service), 2021`}
+        />

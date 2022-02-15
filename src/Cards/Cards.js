@@ -23,7 +23,9 @@ function Cards({
   pic12,
   github,
   description,
-  buttLabel
+  newLine,
+  buttLabel,
+  optionalLink
 }) {
   return (
           <div className="card" class="card bg-none text-white">
@@ -58,6 +60,8 @@ function Cards({
                     pic11={pic11}
                     pic12={pic12}
                     description={description}
+                    newLine={newLine}
+                    optionalLink={optionalLink}
                   />
                 </button>
               </div>

@@ -27,7 +27,8 @@ function Popup({
   github, 
   buttLabel,
   description,
-  thisLink
+  newLine,
+  optionalLink
  }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -59,6 +60,8 @@ function Popup({
                 </a>
               </button>
               <p className="projectDescription">{description}</p>
+              <p className="projectDescription">{newLine}</p>
+              <p className="optionalLink">{optionalLink}</p>
               <img src={pic1} className="picCard" alt="" />
               <img src={pic2} className="picCard" alt="" />
               <img src={pic3} className="picCard" alt="" />

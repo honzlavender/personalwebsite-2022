@@ -25,11 +25,17 @@ import artToggle from "../Graphics/Engineer/Portfolio/artToggle.JPG";
 import devProject from "../Graphics/Engineer/Portfolio/devProject.jpg";
 import devToggle from "../Graphics/Engineer/Portfolio/devToggle.JPG";
 import sillySketch from "../Graphics/Engineer/Portfolio/sillySketch.jpg";
-/**WE LOVE MOVIES */
+/**RESERVATION APP */
 //display
-import moviesIphone from "../Graphics/Engineer/WeLoveMovies/moviesIphone.jpg";
-import moviesIpad from "../Graphics/Engineer/WeLoveMovies/moviesIpad.jpg";
-import moviesDesktop from "../Graphics/Engineer/WeLoveMovies/moviesDesktop.png";
+import dashboard from "../Graphics/Engineer/ResApp/dashboard.png"
+import newRes from "../Graphics/Engineer/ResApp/new-res.png"
+import resCard from "../Graphics/Engineer/ResApp/res-card.png"
+import search from "../Graphics/Engineer/ResApp/search.png"
+import seated from "../Graphics/Engineer/ResApp/seated.png"
+import recording from "../Graphics/Engineer/ResApp/recording.gif"
+import sketch2 from "../Graphics/Engineer/ResApp/res-sketch2.jpg"
+import sketch3 from "../Graphics/Engineer/ResApp/res-sketch3.jpg"
+import { ResButton } from "../Components/OptionalLinks";
 /**FLASHCARD APP */
 import alert from "../Graphics/Engineer/FlashcardApp/alert.png";
 import card from "../Graphics/Engineer/FlashcardApp/card.png";
@@ -73,24 +79,27 @@ function Engineer() {
           github="https://github.com/honzlavender/personalwebsite-2022.git"
           description={`this website right here was made with React using hooks, CSS, and patience, ideas and sketches illustrated in procreate. 2021`}
         />
+
         <Cards
-          cover={moviesDesktop}
+          cover={sketch3}
           buttLabel="github repo"
-          projectName="we love movies"
-          pic1={moviesIphone}
-          pic2={moviesIpad}
-          pic3={moviesDesktop}
-          pic4=""
-          pic5=""
-          pic6=""
-          pic7=""
-          pic8=""
-          pic9=""
+          projectName="periodic tables"
+          pic1=""
+          pic2={sketch2}
+          pic3={sketch3}
+          pic4={recording}
+          pic5={dashboard}
+          pic6={resCard}
+          pic7={newRes}
+          pic8={seated}
+          pic9={search}
           pic10=""
           pic11=""
           pic12=""
-          github="https://github.com/honzlavender/WeLoveMovies.git"
-          description={`Back-End project using Node.js, Express, and Postgres. Built an API following RESTful design principles, created & customized a knexfile.js, connected databases, joined and nested data, and wrote database migrations using Knex. Connected to front-end react app and deployed to Heroku (cloud service), 2021`}
+          github="https://github.com/honzlavender/reservation-app.git"
+          description={`periodic tables is the final capstone project for thinkful's engineering bootcamp. A full-stack application that is intended for restaurants, bars, or any other spaces that take reservations.`}
+          newLine={"sketches illustrated in procreate, 2022"}
+          optionalLink={<ResButton/>}
         />
       </div>
 
