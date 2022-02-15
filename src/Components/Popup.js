@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import Project from "../Cards/ProjectPopup";
 import "../CSS/Popup.css";
 
@@ -28,27 +28,20 @@ function Popup({
   buttLabel,
   description,
   newLine,
-  optionalLink
+  optionalLink,
+  isOpen,
+  togglePopup
  }) {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const togglePopup = () => {
-    setIsOpen(!isOpen);
-  };
 
   return (
     <div className="poop">
-      <input
-        className="popup"
-        type="button"
-        value={projectName}
-        onClick={togglePopup}
-      />
+      <div className="popup">{projectName}</div>
       {isOpen && (
         <Project
           content={
             <div className="pop">
-              <button type="button" class="btn">
+              <button type="button" className="btn">
                 <a
                   href={github}
                   target="_blank"

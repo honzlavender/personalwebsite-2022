@@ -1,6 +1,7 @@
 //import { Card, Button } from "react-bootstrap";
 import Popup from "../Components/Popup";
 import "../CSS/Cards.css";
+import { useState } from 'react'
 
 //images for popup cards are passed through this file under prop 'pic'
 //each file Engineer.js and Art.js hold the source of each pic
@@ -27,8 +28,12 @@ function Cards({
   buttLabel,
   optionalLink
 }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const togglePopup = () => {
+    setIsOpen(!isOpen)
+  }
   return (
-          <div className="card" class="card bg-none text-white">
+          <div className="card" class="card bg-none text-white" onClick={togglePopup}>
             
             <img
               className="engineerCard"
@@ -62,6 +67,8 @@ function Cards({
                     description={description}
                     newLine={newLine}
                     optionalLink={optionalLink}
+                    isOpen={isOpen}
+                    togglePopup={togglePopup}
                   />
                 </button>
               </div>
