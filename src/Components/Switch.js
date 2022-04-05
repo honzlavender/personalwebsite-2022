@@ -1,7 +1,7 @@
 import React from "react";
 //import { useContext } from "react";
 import "../CSS/Switch.css";
-import { RiMoonClearFill, RiSunLine } from "react-icons/ri";
+import { RiMoonClearFill } from "react-icons/ri";
 import { FaSun } from "react-icons/fa"
 import Art from "../Cards/Art";
 import Engineer from "../Cards/Engineer";
