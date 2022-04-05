@@ -137,4 +137,10 @@
   transform: translateX(-100%);
 }
 
+.icon-dark,
+.icon-light {
+  font-size: 1em;
+  padding-bottom: 6px;
+}
+
 }
