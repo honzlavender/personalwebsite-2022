@@ -13,8 +13,6 @@ body,
   justify-content: center;
   text-align: center;
   align-items: center;
-
-
 }
 
 div.aboutbox {
@@ -53,6 +51,10 @@ div.aboutbox {
   .name {
     font-size: 15vw;
   }
+
+  .App {
+  zoom: 100%;
+  }
 }
 
 /*IPAD LAYOUT*/
@@ -60,4 +62,8 @@ div.aboutbox {
   .name {
     font-size: 15vw;
   }
+  
+  .App {
+    zoom: 100%;
+    }
 }
