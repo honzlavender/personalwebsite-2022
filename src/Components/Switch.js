@@ -1,7 +1,8 @@
 import React from "react";
 //import { useContext } from "react";
 import "../CSS/Switch.css";
-import { RiMoonClearLine, RiSunLine } from "react-icons/ri";
+import { RiMoonClearFill, RiSunLine } from "react-icons/ri";
+import { FaSun } from "react-icons/fa"
 import Art from "../Cards/Art";
 import Engineer from "../Cards/Engineer";
 //import { Themes } from "./Theme";
@@ -26,10 +27,10 @@ const Switch = ({toggleTheme}) => {
   return (
     <>
     <div className="toggle">
-      <h6 className="label-dark-engineer">Engineer</h6>
-      <span className="icon-dark">
-        <RiMoonClearLine />
+    <span className="icon-dark">
+        <RiMoonClearFill />
       </span>
+      <h6 className="label-dark-engineer">Engineer</h6>
 
       <input
         onClick={function (event) {
@@ -40,14 +41,16 @@ const Switch = ({toggleTheme}) => {
         id={`react-switch-new`}
         type="checkbox"
       ></input>
+      
       <label className="react-switch-label" htmlFor={`react-switch-new`}>
         <span className={`react-switch-button`}></span>
       </label>
-      <span className="icon-light">
-        <RiSunLine />
-      </span>
       <h6 className="label-light-artist">Artist</h6>
+      <span className="icon-light">
+        <FaSun />
+      </span>
     </div>
+    
     <div className="cards">
       {isOn ? <Art /> : <Engineer />}
       </div>

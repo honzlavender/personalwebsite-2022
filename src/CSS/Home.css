@@ -9,6 +9,12 @@ body,
 .App {
   height: 100%;
   color: currentColor;
+  zoom: 80%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+
 }
 
 div.aboutbox {
@@ -31,7 +37,7 @@ div.aboutbox {
   /* font-family: 'PT Serif', serif; */
   text-transform: lowercase;
   font-weight: bold;
-  font-size: clamp(18px, 50%, 300px);
+  font-size: clamp(22px, 50%, 300px);
   padding: 0;
 }
 

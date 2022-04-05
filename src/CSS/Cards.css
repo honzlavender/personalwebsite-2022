@@ -1,13 +1,13 @@
 /*controls image size for cards for engineer and artist*/
 .card-img {
-  height: 20vw;
+  height: 16vw;
   object-fit: cover;
 }
 
 /*size of card and space between them for engineer and artist*/
 .card {
-  width: 35vw;
-  margin: 1vw;
+  width: 25vw;
+  margin: 1.5vw;
   align-self: center;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,7 @@
 div.cards {
   z-index: 1;
   justify-content: center;
+  margin-top: -6em;
 }
 
 /*project name buttons*/
@@ -43,14 +44,14 @@ button.btnButton {
 h6.blurb {
   font-family: "Raleway", sans-serif;
   text-align: left;
-  font-size: clamp(0.8rem, 1.5rem, 4rem);
+  font-size: clamp(0.8rem, 1.3rem, 4rem);
 }
 
 /*artist blurb*/
 h6.blurb-art {
   font-family: "Raleway", sans-serif;
   text-align: right;
-  font-size: clamp(0.8rem, 1.5rem, 4rem);
+  font-size: clamp(0.8rem, 1.3rem, 4rem);
 }
 
 /*col that holds blurbs and cards*/
@@ -65,7 +66,8 @@ div.col-cards {
 div.row-blurb {
   display: flex;
   align-items: center;
-  margin: 0 3vw 2vw;
+  padding: 0 6vw;
+  margin: 0 10vw 2vw;
 }
 
 /*card rows*/
