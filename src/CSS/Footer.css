@@ -37,7 +37,7 @@ p.copyright {
   justify-content: center;
   /* max-width: fit-content; */
   font-size: clamp(.8rem, 1vw, .9rem);
-  margin: 2% 0 5%;
+  margin: 2% 0 15%;
 }
 
 @media only screen and (max-width: 500px) {
